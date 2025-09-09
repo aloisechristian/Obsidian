@@ -1,7 +1,7 @@
 ## Teorema sulla Relazione tra Molteplicità Algebrica e Geometrica
 
 ### Enunciato del Teorema
-Il teorema fondamentale discusso stabilisce che per qualsiasi autovalore $\lambda$ di una matrice, la sua molteplicità geometrica $mg(\lambda)$ è sempre minore o uguale alla sua molteplicità algebrica $ma(\lambda)$.
+Il teorema fondamentale discusso stabilisce che per qualsiasi [[Autovalore]] $\lambda$ di una matrice, la sua molteplicità geometrica $mg(\lambda)$ è sempre minore o uguale alla sua molteplicità algebrica $ma(\lambda)$.
 - La **molteplicità geometrica** $mg(\lambda)$ è definita come la dimensione dell'autospazio associato all'autovalore $\lambda$.
 - La **molteplicità algebrica** $ma(\lambda)$ è il numero di volte che $\lambda$ appare come radice del polinomio caratteristico della matrice.
 
