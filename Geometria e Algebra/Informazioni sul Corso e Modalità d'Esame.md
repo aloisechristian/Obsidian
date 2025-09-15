@@ -1,5 +1,3 @@
-## Informazioni sul Corso e Modalità d'Esame
-
 ### Struttura e Metodologia di Studio
 - Si sottolinea l'importanza di uno studio costante e parallelo allo svolgimento delle lezioni, dato il ritmo serrato del calendario accademico.
 - La sola frequenza alle lezioni è considerata insufficiente; è indispensabile un approfondimento individuale a casa.
