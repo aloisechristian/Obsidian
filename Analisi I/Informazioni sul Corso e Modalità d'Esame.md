@@ -12,7 +12,7 @@
 ### Orario di Ricevimento e Contatti
 - **Orario**: Mercoledì e Giovedì alle ore 11:00.
 - **Modalità**: Si raccomanda di inviare una mail per annunciare la propria presenza.
-- **Email**: `teresa.punto@unina.it`.
+- **Email**: `teresa.radice@unina.it`.
 - **Sito Docente**: Tutte le informazioni, gli avvisi e il materiale didattico sono pubblicati sulla pagina personale del docente, accessibile dal portale di ateneo `docenti.unina.it`. È responsabilità dello studente consultare regolarmente il sito per aggiornamenti.
 
 ## Materiale Didattico
