@@ -77,7 +77,7 @@ Su $\mathbb{R}$ sono definite due operazioni binarie interne, l'**addizione** (+
 In $\mathbb{R}$ è definita una relazione d'ordine totale "minore o uguale" ($\le$) che soddisfa le seguenti proprietà per ogni $a, b, c \in \mathbb{R}$:
 
 7.  **Proprietà di Dicotomia:** Si ha sempre $a \le b$ oppure $b \le a$.
-8.  **Proprietà Asimmetrica:** Se $a \le b$ e $b \le a$, allora necessariamente $a=b$.
+8.  **Proprietà Asimmetrica:** Se $a \le b$ e $b \le a$, allora necessariamente $a=b$. ^a37a9a
 9.  **Compatibilità con l'Addizione:** Se $a \le b$, allora $a+c \le b+c$ per ogni $c \in \mathbb{R}$. ^84ce53
 10. **Compatibilità con la Moltiplicazione (Chiusura dei non-negativi):** Se $a \ge 0$ e $b \ge 0$, allora $a+b \ge 0$ e $a \cdot b \ge 0$.
 
