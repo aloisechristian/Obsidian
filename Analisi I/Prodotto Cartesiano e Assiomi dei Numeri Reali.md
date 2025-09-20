@@ -85,8 +85,6 @@ Questo assioma distingue $\mathbb{R}$ dall'insieme dei numeri razionali $\mathbb
 - **Assioma di Completezza:** Dati due sottoinsiemi non vuoti $A, B \subset \mathbb{R}$ separati, esiste almeno un elemento $c \in \mathbb{R}$ (detto **elemento di separazione**) tale che $a \le c \le b$ per ogni $a \in A$ e per ogni $b \in B$.
 - **Insiemi Contigui:** Se l'elemento di separazione $c$ è unico, i due insiemi $A$ e $B$ si dicono **contigui**.
 
-Certamente. Ecco il testo integrato con le dimostrazioni mancanti, mantenendo lo stile e la formattazione originali.
-
 ***
 
 Dagli assiomi enunciati è possibile dedurre tutte le proprietà algebriche e di ordinamento dei numeri reali.
