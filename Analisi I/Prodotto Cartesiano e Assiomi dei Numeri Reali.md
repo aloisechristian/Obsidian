@@ -74,7 +74,7 @@ In $\mathbb{R}$ è definita una relazione d'ordine totale "minore o uguale" ($\l
 
 7.  **Proprietà di Dicotomia:** Si ha sempre $a \le b$ oppure $b \le a$.
 8.  **Proprietà Asimmetrica:** Se $a \le b$ e $b \le a$, allora necessariamente $a=b$.
-9.  **Compatibilità con l'Addizione:** Se $a \le b$, allora $a+c \le b+c$ per ogni $c \in \mathbb{R}$.
+9.  **Compatibilità con l'Addizione:** Se $a \le b$, allora $a+c \le b+c$ per ogni $c \in \mathbb{R}$. ^84ce53
 10. **Compatibilità con la Moltiplicazione (Chiusura dei non-negativi):** Se $a \ge 0$ e $b \ge 0$, allora $a+b \ge 0$ e $a \cdot b \ge 0$.
 
 ### 3. Assioma di Completezza
@@ -105,7 +105,7 @@ Dagli assiomi enunciati è possibile dedurre tutte le proprietà algebriche e di
 ### Conseguenze degli Assiomi di Ordinamento
 
 - **Segno dell'Opposto:** $a \ge 0 \iff -a \le 0$. 
-  *Dimostrazione:* Se $a \ge 0$, sommando $-a$ a entrambi i membri (assioma 9) si ottiene $a+(-a) \ge 0+(-a)$, ovvero $0 \ge -a$.
+  *Dimostrazione:* Se $a \ge 0$, sommando $-a$ a entrambi i membri ([[#^84ce53]]) si ottiene $a+(-a) \ge 0+(-a)$, ovvero $0 \ge -a$.
 
 - **Moltiplicazione per un Numero Positivo:** Se $a \le b$ e $c \ge 0$, allora $a \cdot c \le b \cdot c$. La disuguaglianza si conserva. 
   *Dimostrazione:* Da $a \le b$ segue $b-a \ge 0$. Poiché anche $c \ge 0$, per l'assioma 10 il prodotto $(b-a)c \ge 0$. Per la proprietà distributiva, $bc - ac \ge 0$, da cui $bc \ge ac$.
