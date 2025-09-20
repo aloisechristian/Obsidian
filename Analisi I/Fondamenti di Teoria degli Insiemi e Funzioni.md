@@ -122,20 +122,8 @@ $$f: X \to Y$$
 - $X$ è il **dominio** della funzione.
 - $Y$ è il **codominio** della funzione.
 - Per un elemento $x \in X$, l'elemento corrispondente in $Y$ si chiama **immagine** di $x$ tramite $f$ e si indica con $f(x)$.
-### Proprietà delle Funzioni: Iniettività, Suriettività e Biettività
 
-In matematica, le funzioni possono essere classificate in base a come mettono in relazione gli elementi del dominio (l'insieme di partenza) con quelli del codominio (l'insieme di arrivo). Le principali proprietà che una funzione può avere sono l'iniettività, la suriettività e la biettività.
-
-### Funzione Iniettiva (o Iniezione)
-
-Una funzione si definisce **iniettiva** quando ad elementi distinti del dominio corrispondono elementi distinti del codominio. In altre parole, ogni elemento dell'insieme di arrivo (codominio) è immagine di **al massimo** un elemento dell'insieme di partenza (dominio).
-
-Questo significa che non possono esistere due elementi diversi nel dominio che vengono "mappati" sullo stesso elemento nel codominio.
-
-**Definizione formale in LaTeX:**
-
-Una funzione `f: A → B` si dice iniettiva se:
-\forall a_1, a_2 \in A, a_1 \neq a_2 \implies f(a_1) \neq f(a_2)### Funzione Inversa e Funzione Composta
+### Funzione Inversa e Funzione Composta
 - **Funzione Inversa ($f^{-1}$)**: Se una funzione $f: X \to Y$ è sia **iniettiva** (elementi diversi del dominio hanno immagini diverse) sia **suriettiva** (ogni elemento del codominio è immagine di almeno un elemento del dominio), allora è possibile definire la **funzione inversa** $f^{-1}: Y \to X$. Questa funzione associa a ogni elemento $y \in Y$ l'unico elemento $x \in X$ tale che $f(x) = y$.
 
 - **Funzione Composta ($g \circ f$)**: Date due funzioni $f: X \to Y$ e $g: Y \to Z$, la funzione composta $g \circ f$ (si legge "g composto f") è una nuova funzione che va da $X$ a $Z$ e si definisce applicando prima $f$ e poi $g$:
