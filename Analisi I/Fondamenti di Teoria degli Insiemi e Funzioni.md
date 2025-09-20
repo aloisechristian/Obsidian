@@ -103,7 +103,7 @@ Siano $A = \{1, 2, 3, 5\}$ e $B = \{2, 6, 7\}$.
 
 ## Elementi di Logica: Implicazioni tra Proprietà
 
-- **Implicazione Semplice ($\implies$)**: Se la proprietà $\alpha$ implica la proprietà $\beta$ ($"\alpha \implies \beta"$), significa che ogni volta che $\alpha$ è vera, anche $\beta$ deve essere vera. In questo caso, $\alpha$ è **condizione sufficiente** per $\beta$, e $\beta$ è **condizione necessaria** for $\alpha$.
+- **Implicazione Semplice ($\implies$)**: Se la proprietà $\alpha$ implica la proprietà $\beta$ ($"\alpha \implies \beta"$), significa che ogni volta che $\alpha$ è vera, anche $\beta$ deve essere vera. In questo caso, $\alpha$ è **condizione sufficiente** per $\beta$, e $\beta$ è **condizione necessaria** per $\alpha$.
 - **Doppia Implicazione ($\iff$)**: Se $\alpha \implies \beta$ e $\beta \implies \alpha$, le due proprietà sono **equivalenti** e si scrive $"\alpha \iff \beta"$ (si legge "$\alpha$ se e solo se $\beta$").
 
 **Esempio:**
