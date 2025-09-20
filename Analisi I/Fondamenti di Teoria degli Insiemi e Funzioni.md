@@ -124,7 +124,8 @@ $$f: X \to Y$$
 - Per un elemento $x \in X$, l'elemento corrispondente in $Y$ si chiama **immagine** di $x$ tramite $f$ e si indica con $f(x)$.
 ### Funzione iniettiva, suriettiva, biettiva
 - Una funzione si definisce iniettiva se e solo se ad elementi distinti del dominio corrispondo elementi distinti del codominio
-- Una funzione si definisce suriettiva se tutte le y del codominio sono occupate
+- Una funzione si definisce suriettiva se tutte le y del codominio sono immagini di almento una x
+- Una funzione si definisce biettiva se tutte le y del codominio sono immagini uniche di X disti
 ### Funzione Inversa e Funzione Composta
 - **Funzione Inversa ($f^{-1}$)**: Se una funzione $f: X \to Y$ è sia **iniettiva** (elementi diversi del dominio hanno immagini diverse) sia **suriettiva** (ogni elemento del codominio è immagine di almeno un elemento del dominio), allora è possibile definire la **funzione inversa** $f^{-1}: Y \to X$. Questa funzione associa a ogni elemento $y \in Y$ l'unico elemento $x \in X$ tale che $f(x) = y$.
 
