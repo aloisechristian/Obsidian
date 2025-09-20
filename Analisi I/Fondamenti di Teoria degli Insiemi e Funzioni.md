@@ -122,7 +122,34 @@ $$f: X \to Y$$
 - $X$ è il **dominio** della funzione.
 - $Y$ è il **codominio** della funzione.
 - Per un elemento $x \in X$, l'elemento corrispondente in $Y$ si chiama **immagine** di $x$ tramite $f$ e si indica con $f(x)$.
+## Proprietà delle Funzioni: Iniettività, Suriettività e Biettività
 
+In matematica, una funzione stabilisce una relazione tra due insiemi, chiamati **dominio** (l'insieme di partenza) e **codominio** (l'insieme di arrivo). Le proprietà di iniettività, suriettività e biettività descrivono in che modo gli elementi di questi due insiemi sono collegati tra loro.
+### Funzione Iniettiva (o Iniezione)
+
+- **Definizione**: Una funzione si definisce **iniettiva** se a elementi diversi del dominio corrispondono elementi diversi del codominio. In altre parole, ogni elemento del codominio può essere l'immagine di **al massimo** un elemento del dominio.
+
+**Definizione formale:**
+Una funzione `$f: A \to B$` è iniettiva se, per ogni coppia di elementi `$a_1, a_2 \in A$`, vale la condizione:
+`a_1 ≠ a_2  =>  f(a_1) ≠ f(a_2)`
+
+O, in modo equivalente, $"\text{se le immagini sono uguali, allora anche gli elementi di partenza lo sono}"$:
+`f(a_1) = f(a_2)  =>  a_1 = a_2`
+### Funzione Suriettiva (o Suriezione)
+
+- **Definizione**: Una funzione si definisce **suriettiva** quando ogni elemento del codominio è immagine di **almeno** un elemento del dominio. Questo significa che l'insieme delle immagini della funzione coincide con l'intero codominio.
+
+**Definizione formale:**
+Una funzione `$f: A \to B$` è suriettiva se $"\forall b \in B, \exists a \in A : f(a) = b"$. Si legge: "per ogni elemento `$b$` nel codominio `$B$`, esiste almeno un elemento `$a$` nel dominio `$A$` tale che `$f(a)$` sia uguale a `$b$`".
+
+---
+
+### Funzione Biettiva (o Biiezione)
+
+- **Definizione**: Una funzione si definisce **biettiva** (o biunivoca) quando è sia iniettiva che suriettiva. Questo crea una corrispondenza perfetta "uno a uno", dove ogni elemento del codominio è immagine di **uno e un solo** elemento del dominio.
+
+**Definizione formale:**
+Una funzione `$f: A \to B$` è biettiva se $"\forall b \in B, \exists! a \in A : f(a) = b"$. Il simbolo `$\exists!$` significa "esiste ed è unico".
 ### Funzione Inversa e Funzione Composta
 - **Funzione Inversa ($f^{-1}$)**: Se una funzione $f: X \to Y$ è sia **iniettiva** (elementi diversi del dominio hanno immagini diverse) sia **suriettiva** (ogni elemento del codominio è immagine di almeno un elemento del dominio), allora è possibile definire la **funzione inversa** $f^{-1}: Y \to X$. Questa funzione associa a ogni elemento $y \in Y$ l'unico elemento $x \in X$ tale che $f(x) = y$.
 
