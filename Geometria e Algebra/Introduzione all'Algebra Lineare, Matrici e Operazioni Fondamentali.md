@@ -34,6 +34,9 @@ Per illustrare il concetto, consideriamo due esempi:
 Le matrici forniscono un apparato formale e computazionale per affrontare questi problemi in modo più rapido e strutturato. Le loro applicazioni moderne sono vastissime, dalla modellizzazione del traffico urbano all'algoritmo PageRank di Google, che classifica le pagine web utilizzando una matrice di enormi dimensioni.
 
 ### Definizione Formale di Matrice
+
+^1f6aea
+
 Una **matrice** è una tabella rettangolare ordinata di elementi, detti **entrate**. Una matrice è univocamente determinata da tre caratteristiche:
 1.  Il numero di righe, $m$.
 2.  Il numero di colonne, $n$.
