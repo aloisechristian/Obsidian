@@ -130,8 +130,8 @@ In matematica, una funzione stabilisce una relazione tra due insiemi, chiamati *
 - **Definizione**: Una funzione si definisce **iniettiva** se a elementi diversi del dominio corrispondono elementi diversi del codominio. In altre parole, ogni elemento del codominio può essere l'immagine di **al massimo** un elemento del dominio.
 
 **Definizione formale:**
-Una funzione `$f: A \to B$` è iniettiva se, per ogni coppia di elementi `$a_1, a_2 \in A$`, vale la condizione:
-`a_1 ≠ a_2  =>  f(a_1) ≠ f(a_2)`
+Una funzione $f: A \to B$ è iniettiva se, per ogni coppia di elementi $a_1, a_2 \in A$, vale la condizione:
+$a_1 ≠ a_2  =>  f(a_1) ≠ f(a_2)$
 
 O, in modo equivalente, $"\text{se le immagini sono uguali, allora anche gli elementi di partenza lo sono}"$:
 `f(a_1) = f(a_2)  =>  a_1 = a_2`
