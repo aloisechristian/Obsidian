@@ -85,32 +85,60 @@ Questo assioma distingue $\mathbb{R}$ dall'insieme dei numeri razionali $\mathbb
 - **Assioma di Completezza:** Dati due sottoinsiemi non vuoti $A, B \subset \mathbb{R}$ separati, esiste almeno un elemento $c \in \mathbb{R}$ (detto **elemento di separazione**) tale che $a \le c \le b$ per ogni $a \in A$ e per ogni $b \in B$.
 - **Insiemi Contigui:** Se l'elemento di separazione $c$ è unico, i due insiemi $A$ e $B$ si dicono **contigui**.
 
-## Conseguenze degli Assiomi
+Certamente. Ecco il testo integrato con le dimostrazioni mancanti, mantenendo lo stile e la formattazione originali.
+
+***
 
 Dagli assiomi enunciati è possibile dedurre tutte le proprietà algebriche e di ordinamento dei numeri reali.
 
 ### Conseguenze degli Assiomi delle Operazioni
 
 - **Regola di Semplificazione per la Somma:** Se $a+b = a+c$, allora $b=c$.
-  *Dimostrazione:* Partendo da $b$, si utilizza l'esistenza dell'elemento neutro e dell'opposto: $b = b+0 = b + ((-a)+a)$. Per la proprietà associativa: $(b+a)+(-a)$. Per la commutativa: $(a+b)+(-a)$. Sfruttando l'ipotesi $a+b=a+c$: $(a+c)+(-a)$. Riassociando e ricommutando: $c+(a+(-a)) = c+0 = c$. Dunque $b=c$.
+  *Dimostrazione:* Partendo da $b$ e utilizzando l'esistenza dell'elemento neutro (0) e dell'opposto (-a), si ha:
+  $b = b+0 = 0+b = (-a+a)+b = -a+(a+b)$.
+  Sfruttando l'ipotesi $a+b=a+c$:
+  $-a+(a+c) = (-a+a)+c = 0+c = c$. Dunque $b=c$.
+
+- **Regola di Semplificazione per il Prodotto:** Se $a \cdot b = a \cdot c$ e $a \neq 0$, allora $b=c$.
+  *Dimostrazione:* Dato che $a \neq 0$, esiste il suo inverso $a^{-1}$. Si ha:
+  $b = b \cdot 1 = b \cdot (a \cdot a^{-1}) = (a \cdot b) \cdot a^{-1}$.
+  Per ipotesi $a \cdot b = a \cdot c$:
+  $(a \cdot c) \cdot a^{-1} = (c \cdot a) \cdot a^{-1} = c \cdot (a \cdot a^{-1}) = c \cdot 1 = c$. Dunque $b=c$.
 
 - **Legge di Annullamento del Prodotto:** $a \cdot b = 0 \iff a=0 \text{ oppure } b=0$.
-  *Dimostrazione $(\Leftarrow)$:* Se $a=0$, si deve mostrare che $0 \cdot b = 0$. Questo si dimostra a partire da un'uguaglianza nota e applicando gli assiomi. Ad esempio, $0 \cdot b = (0+0) \cdot b = 0 \cdot b + 0 \cdot b$. Semplificando per la somma, si ottiene $0 = 0 \cdot b$.
-  *Dimostrazione $(\Rightarrow)$:* Si supponga $a \cdot b = 0$. Se $a \neq 0$, allora esiste l'inverso $a^{-1}$. Moltiplicando entrambi i membri per $a^{-1}$ si ha: $a^{-1} \cdot (a \cdot b) = a^{-1} \cdot 0$. Per l'associatività, $(a^{-1} \cdot a) \cdot b = 0$. Poiché $a^{-1} \cdot a = 1$, si ottiene $1 \cdot b = 0$, da cui $b=0$.
+  *Dimostrazione $(\Leftarrow)$:* Proviamo che $a \cdot 0 = 0$ per ogni numero reale $a$. Consideriamo:
+  $a + a \cdot 0 = a \cdot 1 + a \cdot 0 = a \cdot (1+0) = a \cdot 1 = a = a+0$.
+  Otteniamo quindi l'uguaglianza $a + a \cdot 0 = a+0$. Per la regola di semplificazione rispetto alla somma, si conclude che $a \cdot 0 = 0$.
+  *Dimostrazione $(\Rightarrow)$:* Si supponga $a \cdot b = 0$. Se $a \neq 0$, allora esiste l'inverso $a^{-1}$. Moltiplicando entrambi i membri per $a^{-1}$ si ha:
+  $b = b \cdot 1 = b \cdot (a \cdot a^{-1}) = a^{-1} \cdot (a \cdot b) = a^{-1} \cdot 0 = 0$.
 
 - **Inesistenza dell'Inverso di Zero:** Non è possibile definire l'inverso di 0. Se per assurdo esistesse $0^{-1}$, per definizione di inverso si dovrebbe avere $0 \cdot 0^{-1} = 1$. Tuttavia, per la legge di annullamento del prodotto, $0 \cdot 0^{-1} = 0$. Si giungerebbe quindi all'assurdo $1=0$.
 
-- **Unicità dell'Opposto:** L'opposto di un numero è unico. Se $b$ e $c$ fossero entrambi opposti di $a$, si avrebbe $a+b=0$ e $a+c=0$. Dunque $a+b=a+c$, e per la regola di semplificazione, $b=c$.
+- **Unicità dell'Opposto:** L'opposto di un numero reale è unico. Per ogni numero reale $a$ esiste l'opposto $-a$ tale che $a+(-a)=0$. Se supponiamo che esista un altro elemento $b$ tale che $a+b=0$, allora per la legge di semplificazione dell'addizione, partendo da $a+(-a)=a+b$, si ottiene $-a=b$.
+
+- **Unicità dell'Inverso:** L'inverso di un numero reale $a \neq 0$ è unico. Per ogni $a \neq 0$ esiste $a^{-1}$ tale che $a \cdot a^{-1} = 1$. Se supponiamo che esista un altro elemento $b$ tale che $a \cdot b = 1$, allora per la legge di semplificazione del prodotto si ha che $a^{-1}=b$.
+
+- **Opposto dell'opposto:** Per ogni numero reale $a$ vale $-(-a) = a$. Infatti, $-(-a)$ è l'opposto di $-a$, ma anche $a$ è l'opposto di $-a$, poiché $-a+a=0$. Per l'unicità dell'opposto, segue la tesi.
+
+- **Regola dei segni:** Per ogni $a,b \in \mathbb{R}$:
+    1.  $(-a) \cdot b = -(a \cdot b)$. Dimostrazione: $(-a) \cdot b + a \cdot b = [(-a)+a] \cdot b = 0 \cdot b = 0$. Questo significa che $(-a) \cdot b$ è l'opposto di $a \cdot b$, cioè $-(a \cdot b)$.
+    2.  $(-a) \cdot (-b) = a \cdot b$. Dimostrazione: $(-a) \cdot (-b) = -[a \cdot (-b)] = -[-(a \cdot b)]$. Per la proprietà dell'opposto dell'opposto, si ottiene $a \cdot b$.
 
 ### Conseguenze degli Assiomi di Ordinamento
 
-- **Segno dell'Opposto:** $a \ge 0 \iff -a \le 0$. 
-  *Dimostrazione:* Se $a \ge 0$, sommando $-a$ a entrambi i membri ([[#^84ce53]]) si ottiene $a+(-a) \ge 0+(-a)$, ovvero $0 \ge -a$.
+- **Equivalenza della disuguaglianza:** $a \le b \iff b-a \ge 0$.
+  *Dimostrazione:* Se $a \le b$, sommando $-a$ a entrambi i membri si ottiene $a-a \le b-a$, ovvero $0 \le b-a$. Viceversa, se $b-a \ge 0$, sommando $a$ a entrambi i membri si ha $(b-a)+a \ge 0+a$, da cui $b \ge a$.
 
-- **Moltiplicazione per un Numero Positivo:** Se $a \le b$ e $c \ge 0$, allora $a \cdot c \le b \cdot c$. La disuguaglianza si conserva. 
-  *Dimostrazione:* Da $a \le b$ segue $b-a \ge 0$. Poiché anche $c \ge 0$, per l'assioma 10 il prodotto $(b-a)c \ge 0$. Per la proprietà distributiva, $bc - ac \ge 0$, da cui $bc \ge ac$.
+- **Proprietà Transitiva:** Se $a \le b$ e $b \le c$, allora $a \le c$.
+  *Dimostrazione:* Da $a \le b$ segue $b-a \ge 0$. Allo stesso modo, da $b \le c$ segue $c-b \ge 0$. Poiché la somma di numeri non negativi è non negativa, si ha $(b-a)+(c-b) \ge 0$. Semplificando si ottiene $c-a \ge 0$, che equivale a $c \ge a$.
 
-- **Moltiplicazione per un Numero Negativo:** Se $a \le b$ e $c \le 0$, allora $a \cdot c \ge b \cdot c$. La disuguaglianza si inverte. 
+- **Segno dell'Opposto:** $a \ge 0 \iff -a \le 0$.
+  *Dimostrazione:* Se $a \ge 0$, sommando $-a$ a entrambi i membri si ottiene $a+(-a) \ge 0+(-a)$, ovvero $0 \ge -a$.
+
+- **Moltiplicazione per un Numero Positivo:** Se $a \le b$ e $c \ge 0$, allora $a \cdot c \le b \cdot c$. La disuguaglianza si conserva.
+  *Dimostrazione:* Da $a \le b$ segue $b-a \ge 0$. Poiché anche $c \ge 0$, il prodotto $(b-a)c \ge 0$. Per la proprietà distributiva, $bc - ac \ge 0$, da cui $bc \ge ac$.
+
+- **Moltiplicazione per un Numero Negativo:** Se $a \le b$ e $c \le 0$, allora $a \cdot c \ge b \cdot c$. La disuguaglianza si inverte.
   *Dimostrazione:* Se $c \le 0$, allora $-c \ge 0$. Poiché $b-a \ge 0$, si ha $(b-a)(-c) \ge 0$. Svolgendo il prodotto, si ottiene $-bc + ac \ge 0$, da cui $ac \ge bc$.
 
 - **Relazione tra gli Inversi:** Se $0 < a < b$, allora $0 < b^{-1} < a^{-1}$.
