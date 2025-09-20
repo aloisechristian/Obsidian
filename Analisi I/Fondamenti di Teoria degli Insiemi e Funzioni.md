@@ -134,13 +134,13 @@ Una funzione $f: A \to B$ è iniettiva se, per ogni coppia di elementi $a_1, a_2
 $a_1 ≠ a_2  =>  f(a_1) ≠ f(a_2)$
 
 O, in modo equivalente, $"\text{se le immagini sono uguali, allora anche gli elementi di partenza lo sono}"$:
-`f(a_1) = f(a_2)  =>  a_1 = a_2`
+$f(a_1) = f(a_2)  =>  a_1 = a_2$
 ### Funzione Suriettiva (o Suriezione)
 
 - **Definizione**: Una funzione si definisce **suriettiva** quando ogni elemento del codominio è immagine di **almeno** un elemento del dominio. Questo significa che l'insieme delle immagini della funzione coincide con l'intero codominio.
 
 **Definizione formale:**
-Una funzione `$f: A \to B$` è suriettiva se $"\forall b \in B, \exists a \in A : f(a) = b"$. Si legge: "per ogni elemento `$b$` nel codominio `$B$`, esiste almeno un elemento `$a$` nel dominio `$A$` tale che `$f(a)$` sia uguale a `$b$`".
+Una funzione $f: A \to B$ è suriettiva se $"\forall b \in B, \exists a \in A : f(a) = b"$. Si legge: "per ogni elemento `$b$` nel codominio $B$, esiste almeno un elemento $a$ nel dominio $A$ tale che $f(a)$ sia uguale a $b$".
 
 ---
 
