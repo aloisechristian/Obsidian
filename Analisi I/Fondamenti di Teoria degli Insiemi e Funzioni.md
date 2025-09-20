@@ -149,7 +149,7 @@ Una funzione $f: A \to B$ è suriettiva se $"\forall b \in B, \exists a \in A : 
 - **Definizione**: Una funzione si definisce **biettiva** (o biunivoca) quando è sia iniettiva che suriettiva. Questo crea una corrispondenza perfetta "uno a uno", dove ogni elemento del codominio è immagine di **uno e un solo** elemento del dominio.
 
 **Definizione formale:**
-Una funzione `$f: A \to B$` è biettiva se $"\forall b \in B, \exists! a \in A : f(a) = b"$. Il simbolo `$\exists!$` significa "esiste ed è unico".
+Una funzione $f: A \to B$ è biettiva se $"\forall b \in B, \exists! a \in A : f(a) = b"$. Il simbolo $\exists!$ significa "esiste ed è unico".
 ### Funzione Inversa e Funzione Composta
 - **Funzione Inversa ($f^{-1}$)**: Se una funzione $f: X \to Y$ è sia **iniettiva** (elementi diversi del dominio hanno immagini diverse) sia **suriettiva** (ogni elemento del codominio è immagine di almeno un elemento del dominio), allora è possibile definire la **funzione inversa** $f^{-1}: Y \to X$. Questa funzione associa a ogni elemento $y \in Y$ l'unico elemento $x \in X$ tale che $f(x) = y$.
 
