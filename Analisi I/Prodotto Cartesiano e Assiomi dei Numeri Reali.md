@@ -83,6 +83,8 @@ In $\mathbb{R}$ è definita una relazione d'ordine totale "minore o uguale" ($\l
 
 ### 3. Assioma di Completezza
 
+^240591
+
 Questo assioma distingue $\mathbb{R}$ dall'insieme dei numeri razionali $\mathbb{Q}$ e garantisce l'assenza di "buchi" sulla retta reale.
 
 - **Definizione di Insiemi Separati:** Due sottoinsiemi non vuoti $A, B \subset \mathbb{R}$ si dicono **separati** se ogni elemento di $A$ è minore o uguale di ogni elemento di $B$, cioè $\forall a \in A, \forall b \in B, a \le b$.
