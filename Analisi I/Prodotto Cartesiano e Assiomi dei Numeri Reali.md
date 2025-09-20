@@ -72,6 +72,8 @@ Su $\mathbb{R}$ sono definite due operazioni binarie interne, l'**addizione** (+
 
 ### 2. Assiomi di Ordinamento
 
+^6ced7f
+
 In $\mathbb{R}$ è definita una relazione d'ordine totale "minore o uguale" ($\le$) che soddisfa le seguenti proprietà per ogni $a, b, c \in \mathbb{R}$:
 
 7.  **Proprietà di Dicotomia:** Si ha sempre $a \le b$ oppure $b \le a$.
