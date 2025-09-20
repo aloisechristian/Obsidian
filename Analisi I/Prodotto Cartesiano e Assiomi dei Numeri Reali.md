@@ -50,6 +50,8 @@ L'insieme dei numeri reali, denotato con $\mathbb{R}$, è definito da un sistema
 
 ### 1. Assiomi Relativi alle Operazioni (Assiomi di Campo)
 
+^e1bb55
+
 Su $\mathbb{R}$ sono definite due operazioni binarie interne, l'**addizione** (+) e la **moltiplicazione** ($\cdot$), che associano a ogni coppia di numeri reali $(a, b) \in \mathbb{R}^2$ un unico numero reale, rispettivamente $a+b$ e $a \cdot b$. Queste operazioni soddisfano le seguenti proprietà per ogni $a, b, c \in \mathbb{R}$:
 
 1.  **Proprietà Associativa:**
