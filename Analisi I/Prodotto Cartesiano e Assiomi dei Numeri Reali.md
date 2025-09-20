@@ -1,6 +1,6 @@
 ## Introduzione e Richiami
 
-Nelle lezioni precedenti sono stati introdotti i concetti fondamentali di **insieme**, le operazioni insiemistiche (unione, intersezione, differenza) e la definizione di **funzione** come una legge che associa a ogni elemento $x$ di un insieme di partenza $X$ un unico elemento $y$ di un insieme di arrivo $Y$.
+Nelle lezioni precedenti sono stati introdotti i concetti fondamentali di **[[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Insieme e Notazioni|insieme]]**, le operazioni insiemistiche (unione, intersezione, differenza) e la definizione di **[[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]]** come una legge che associa a ogni elemento $x$ di un insieme di partenza $X$ un unico elemento $y$ di un insieme di arrivo $Y$.
 
 La lezione odierna prosegue approfondendo la teoria degli insiemi con l'introduzione del prodotto cartesiano e, successivamente, stabilisce le fondamenta del calcolo infinitesimale attraverso la presentazione della **struttura assiomatica dell'insieme dei numeri reali** $\mathbb{R}$. Gli assiomi sono proposizioni fondamentali accettate come vere senza dimostrazione, dalle quali discendono, tramite deduzione logica, teoremi, lemmi e corollari che costituiscono l'intera teoria matematica.
 
@@ -43,6 +43,42 @@ Il prodotto cartesiano è fondamentale per definire il **grafico di una funzione
 $$ G_f = \{ (x, y) \in X \times Y \mid y = f(x) \} = \{ (x, f(x)) \mid x \in X \} $$
 
 In questo caso, la seconda componente della coppia non è scelta arbitrariamente all'interno di $Y$, ma è determinata univocamente dalla prima componente $x$ e dalla funzione $f$.
+
+## Dagli Assiomi alla Gerarchia degli Insiemi Numerici
+
+Prima di definire la struttura assiomatica di $\mathbb{R}$, è utile ripercorrere la costruzione dei principali insiemi numerici per comprendere le motivazioni che portano all'introduzione dei numeri reali.
+
+Partendo dall'esistenza degli elementi neutri 0 e 1, possiamo costruire l'insieme dei **numeri naturali** $\mathbb{N} = \{1, 2, 3, \dots\}$. Questo insieme, tuttavia, è incompleto: manca l'elemento neutro della somma (0) e gli opposti.
+
+Per colmare queste lacune, si introducono:
+1.  **$\mathbb{N}_0 = \mathbb{N} \cup \{0\}$**: Si aggiunge lo zero per avere l'elemento neutro dell'addizione.
+2.  **$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$**: L'insieme degli **interi relativi**, che include gli opposti di ogni numero, soddisfacendo così l'assioma dell'esistenza dell'opposto. In $\mathbb{Z}$, però, non è garantita l'esistenza dell'inverso moltiplicativo per ogni elemento (ad eccezione di $\pm 1$).
+3.  **$\mathbb{Q} = \{ \frac{m}{n} \mid m \in \mathbb{Z}, n \in \mathbb{Z} \setminus \{0\} \}$**: L'insieme dei **numeri razionali**, che introduce le frazioni e soddisfa l'assioma dell'esistenza dell'inverso.
+
+Otteniamo così una catena di inclusioni strette:
+$$ \mathbb{N} \subset \mathbb{N}_0 \subset \mathbb{Z} \subset \mathbb{Q} \subseteq \mathbb{R} $$
+L'insieme $\mathbb{Q}$ soddisfa tutti gli assiomi algebrici e di ordinamento, ma, come vedremo, non gode dell'**assioma di completezza**, il che rende l'ultima inclusione stretta ($\subset$) e non un'uguaglianza.
+
+### L'Incompletezza dei Razionali: l'Irrazionalità di $\sqrt{2}$
+
+Per dimostrare che $\mathbb{Q} \neq \mathbb{R}$ è sufficiente mostrare l'esistenza di un numero reale che non può essere scritto come frazione.
+
+**Proposizione:** Non esiste alcun numero razionale $c \in \mathbb{Q}$ tale che $c^2=2$.
+
+*Dimostrazione (per assurdo):*
+Supponiamo che esista un tale $c \in \mathbb{Q}$. Per definizione, possiamo scriverlo come $c = \frac{m}{n}$, con $m, n \in \mathbb{Z}$ e $n \neq 0$, e possiamo assumere che la frazione sia **ridotta ai minimi termini**, cioè che $m$ e $n$ non abbiano fattori comuni (siano primi tra loro).
+
+Dall'ipotesi $c^2=2$ segue:
+$$ \left(\frac{m}{n}\right)^2 = 2 \implies m^2 = 2n^2 $$
+Questa equazione ci dice che $m^2$ è un numero pari. Un lemma fondamentale afferma che *se il quadrato di un numero intero è pari, allora il numero stesso è pari*. Quindi, $m$ deve essere pari e può essere scritto come $m=2k$ per qualche intero $k$.
+
+Sostituendo $m=2k$ nell'equazione precedente:
+$$ (2k)^2 = 2n^2 \implies 4k^2 = 2n^2 \implies n^2 = 2k^2 $$
+Questo risultato implica che anche $n^2$ è pari, e per lo stesso lemma, anche $n$ deve essere pari.
+
+Siamo giunti a una **contraddizione**: sia $m$ che $n$ sono pari, il che significa che hanno il 2 come fattore comune. Questo contraddice l'assunzione iniziale che la frazione $\frac{m}{n}$ fosse ridotta ai minimi termini. L'assurdo logico invalida l'ipotesi di partenza.
+
+Pertanto, non esiste alcun numero razionale il cui quadrato sia 2. Il numero $\sqrt{2}$ è un **numero irrazionale** e questo dimostra che l'insieme $\mathbb{Q}$ ha dei "buchi", che verranno "riempiti" dall'insieme $\mathbb{R}$ grazie all'assioma di completezza.
 
 ## La Struttura Assiomatica dei Numeri Reali ($\mathbb{R}$)
 
@@ -90,6 +126,11 @@ Questo assioma distingue $\mathbb{R}$ dall'insieme dei numeri razionali $\mathbb
 - **Definizione di Insiemi Separati:** Due sottoinsiemi non vuoti $A, B \subset \mathbb{R}$ si dicono **separati** se ogni elemento di $A$ è minore o uguale di ogni elemento di $B$, cioè $\forall a \in A, \forall b \in B, a \le b$.
 - **Assioma di Completezza:** Dati due sottoinsiemi non vuoti $A, B \subset \mathbb{R}$ separati, esiste almeno un elemento $c \in \mathbb{R}$ (detto **elemento di separazione**) tale che $a \le c \le b$ per ogni $a \in A$ e per ogni $b \in B$.
 - **Insiemi Contigui:** Se l'elemento di separazione $c$ è unico, i due insiemi $A$ e $B$ si dicono **contigui**.
+
+Un esempio dell'incompletezza di $\mathbb{Q}$ si può costruire considerando gli insiemi:
+$A=\{a\in\mathbb{Q} : a\le0\} \cup \{a\in\mathbb{Q} : a>0, a^{2}<2\}$
+$B=\{b\in\mathbb{Q} : b>0, b^{2}>2\}$
+Si può dimostrare che $A$ e $B$ sono separati, ma non esiste alcun elemento di separazione *all'interno di* $\mathbb{Q}$. L'elemento separatore sarebbe $\sqrt{2}$, che è irrazionale. In $\mathbb{R}$, invece, l'esistenza di tale elemento è garantita dall'assioma di completezza.
 
 ***
 
