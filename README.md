@@ -1,2 +1,1 @@
-# Obsidian
-## Analisi I
+
