@@ -3,10 +3,9 @@
 Nelle lezioni precedenti sono state introdotte le nozioni fondamentali relative alle matrici. Di seguito, un breve riepilogo degli argomenti trattati:
 
 1.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#^1f6aea|Definizione di Matrice]]:** Introduzione al concetto di matrice come tabella rettangolare di numeri.
-2.  **Uguaglianza tra Matrici:** Due matrici sono uguali se hanno le stesse dimensioni e le stesse entrate in posizioni corrispondenti.
-3.  **Trasposizione:** Operazione che scambia le righe con le colonne di una matrice.
-4.  **Somma di Matrici:** Definita per matrici delle stesse dimensioni, si ottiene sommando le entrate corrispondenti.
-5.  **Moltiplicazione per uno Scalare:** Prodotto di una matrice per un numero (scalare), che consiste nel moltiplicare ogni entrata della matrice per quello scalare.
+2.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Operazioni Elementari con le Matrici|Uguaglianza, Somma e Sottrazione]]:** Operazioni definite per matrici delle stesse dimensioni.
+3.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Proprietà della Somma e della Moltiplicazione Scalare|Trasposizione]]:** Operazione che scambia le righe con le colonne di una matrice.
+4.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Moltiplicazione per uno Scalare|Moltiplicazione per uno Scalare]]:** Prodotto di una matrice per un numero (scalare).
 
 L'ultima operazione introdotta è stata la **moltiplicazione riga per colonna** tra due matrici.
 
