@@ -53,7 +53,7 @@ Per dimostrare questa proposizione, necessitiamo di alcune definizioni e un lemm
 ### 3.1 Numeri Pari e Dispari
 Un numero naturale $n \in \mathbb{N}$ si dice:
 *   **Pari**, se è un multiplo di 2, ovvero se esiste $k \in \mathbb{N}$ tale che $n = 2k$.
-*   **Dispari**, se non è pari, ovvero se esiste $k \in \mathbb{N}$ tale che $n = 2k-1$ (o $n=2k+1$, a seconda della scelta per il dominio di $k$) ($2k-1 è preferibile per includere anche l'uno).
+*   **Dispari**, se non è pari, ovvero se esiste $k \in \mathbb{N}$ tale che $n = 2k-1$ (o $n=2k+1$, a seconda della scelta per il dominio di $k$) ($2k-1$ è preferibile per includere anche l'uno).
 
 **Lemma:** Se il quadrato di un numero intero $m$, $m^2$, è pari, allora anche $m$ è pari.
 
