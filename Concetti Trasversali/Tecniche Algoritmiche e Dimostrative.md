@@ -30,4 +30,4 @@ Questa tecnica dimostrativa è una delle più potenti. La sua logica consiste ne
 3.  Arrivare a una contraddizione, ovvero un'affermazione che è palesemente falsa (es. $1=0$) o che contraddice una delle ipotesi iniziali.
 4.  Concludere che, poiché la negazione della tesi porta a un assurdo, la tesi originale deve essere necessariamente vera.
 
-- **[[Analisi I/Insiemi Numerici, Completezza e Estremo Superiore#3.2 Dimostrazione dell'Irrazionalità di √2|Esempio: Irrazionalità della Radice di 2]]:** Un esempio classico di dimostrazione per assurdo. Si suppone che $\sqrt{2}$ sia un numero razionale e, attraverso passaggi logici, si arriva alla contraddizione che numeratore e denominatore della frazione ridotta ai minimi termini sarebbero entrambi pari.
+- **[[Analisi I/Insiemi Numerici, Completezza e Estremo Superiore^3.2 Dimostrazione dell'Irrazionalità di √2|Esempio: Irrazionalità della Radice di 2]]:** Un esempio classico di dimostrazione per assurdo. Si suppone che $\sqrt{2}$ sia un numero razionale e, attraverso passaggi logici, si arriva alla contraddizione che numeratore e denominatore della frazione ridotta ai minimi termini sarebbero entrambi pari.
