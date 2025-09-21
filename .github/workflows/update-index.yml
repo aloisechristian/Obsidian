@@ -3,7 +3,11 @@ name: Update Vault Index
 on:
   push:
     branches:
-      - main  # Esegui solo quando carichi modifiche sul branch 'main'
+      - main
+
+# Aggiungi questa sezione per dare i permessi di scrittura all'azione
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -18,13 +22,11 @@ jobs:
 
       - name: Generate file index
         run: |
-          # Crea l'intestazione per il file di indice
           echo "# Indice del Vault" > VAULT_INDEX.md
           echo "" >> VAULT_INDEX.md
           echo "Questo file viene aggiornato automaticamente e contiene la lista di tutte le note nel repository." >> VAULT_INDEX.md
           echo "" >> VAULT_INDEX.md
           echo '```' >> VAULT_INDEX.md
-          # Esegui il comando tree, ignorando la cartella .github e il file stesso
           tree -I ".github|VAULT_INDEX.md|README.md" >> VAULT_INDEX.md
           echo '```' >> VAULT_INDEX.md
 
@@ -33,7 +35,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add VAULT_INDEX.md
-          # Esegui il commit solo se ci sono state modifiche al file di indice
           if ! git diff --staged --quiet; then
             git commit -m "docs: Aggiorna automaticamente l'indice del vault"
             git push
