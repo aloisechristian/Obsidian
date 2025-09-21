@@ -63,6 +63,9 @@ $$ m^2 = (2k-1)^2 = 4k^2 - 4k + 1 = 2(2k^2 - 2k) + 1 $$
 Ponendo $K = 2k^2 - 2k$, otteniamo $m^2 = 2K+1$. Questa è la forma di un numero dispari. Ciò contraddice l'ipotesi che $m^2$ sia pari. Pertanto, l'assunzione iniziale che $m$ sia dispari deve essere falsa, e di conseguenza $m$ deve essere pari.
 
 ### 3.2 Dimostrazione dell'Irrazionalità di $\sqrt{2}$
+
+^1ca686
+
 Procediamo per assurdo, supponendo che esista un numero razionale $c$ tale che $c^2 = 2$. Se $c \in \mathbb{Q}$, allora può essere scritto come una frazione:
 $$ c = \frac{m}{n} $$
 con $m \in \mathbb{Z}$ e $n \in \mathbb{N}$. Possiamo assumere, senza perdita di generalità, che la frazione sia ridotta ai minimi termini, ovvero che $m$ e $n$ siano primi tra loro (non abbiano fattori comuni oltre a 1).
