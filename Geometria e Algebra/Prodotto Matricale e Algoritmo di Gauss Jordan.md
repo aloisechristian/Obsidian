@@ -58,7 +58,7 @@ In analogia con l'aritmetica dei numeri reali, dove la divisione $a/b$ può esse
 
 ### La Matrice Identità come Elemento Neutro
 
-L'elemento neutro esiste solo nel contesto delle matrici quadrate. La **matrice identità** di ordine $n$, denotata con $I_n$, è una matrice quadrata $n \times n$ con tutti 1 sulla diagonale principale e 0 altrove. Essa agisce come l'elemento neutro per la moltiplicazione, ovvero per qualsiasi matrice quadrata $A$ di dimensione $n \times n$:
+L'elemento neutro esiste solo nel contesto delle matrici quadrate. La **matrice identità** di ordine $n$, denotata con $I_n$, è una matrice quadrata $n \times n$ con tutti 1 sulla diagonale principale e 0 altrove. La matrice identità è un caso particolare di [[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice diagonale]]. Essa agisce come l'elemento neutro per la moltiplicazione, ovvero per qualsiasi matrice quadrata $A$ di dimensione $n \times n$:
 
 $$A \times I_n = I_n \times A = A$$
 
