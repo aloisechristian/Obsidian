@@ -74,7 +74,7 @@ Date due matrici $A, B$ di dimensioni $m \times n$ e due scalari $\lambda, \mu \
 - **Distributività (rispetto alla somma di matrici):** $\lambda (A + B) = \lambda A + \lambda B$
 - **Compatibilità con la trasposizione:** $(\lambda A)^T = \lambda A^T$
 
-### Prodotto tra Matrici (Prodotto Riga per Colonna)
+### [[Prodotto Matricale e Algoritmo di Gauss Jordan#Il Prodotto Riga per Colonna|Prodotto tra Matrici (Prodotto Riga per Colonna)]]
 Il prodotto tra due matrici $A$ e $B$ è un'operazione più complessa.
 
 - **Condizione di Conformabilità:** Il prodotto $A \cdot B$ è definito solo se il numero di colonne di $A$ è uguale al numero di righe di $B$. Se $A$ è una matrice $m \times n$ e $B$ è una matrice $n \times p$, la matrice prodotto $C = A \cdot B$ avrà dimensioni $m \times p$.
