@@ -1,7 +1,7 @@
 ## Informazioni Generali sul Corso
 
 ### Modalità d'Esame
-L'esame di Analisi I si compone di una prova scritta e una prova orale. Per agevolare gli studenti, verranno organizzate delle prove in itinere, comunemente definite "provine". Queste prove si terranno a metà e alla fine del corso e, se superate, esonereranno lo studente dalla prova scritta finale, permettendogli di concentrarsi esclusivamente sulla preparazione per l'esame orale previsto per gennaio.
+L'esame di Analisi I si compone di una prova scritta e una prova orale. Per agevolare gli studenti, verranno organizzate delle prove in itinere, comunemente definite "provine". Queste prove si terranno a metà e alla fine del corso e, se superate, esonereranno lo studente dalla prova scritta finale, permettendogli di concentrarsi esclusivamente sulla preparazione per l'esame orale previsto per gennaio
 
 ### Metodologia di Studio
 È fondamentale studiare in modo costante e rimanere al passo con il programma. Il tempo a disposizione è limitato, pertanto la sola frequenza delle lezioni non è sufficiente. È necessario dedicare tempo allo studio individuale per consolidare i concetti appresi. Le prove in itinere, previste per novembre, rappresentano un'importante occasione di autovalutazione per comprendere il proprio livello di preparazione.
