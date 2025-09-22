@@ -12,10 +12,11 @@ Questo file viene aggiornato automaticamente e contiene la lista di tutte le not
 │   └── Tecniche Algoritmiche e Dimostrative.md
 ├── Fondamenti di Informatica
 │   ├── Introduzione al Corso e Fondamenti dell'Informazione.md
+│   ├── Rappresentazione Binaria dei Numeri Interi Relativi.md
 │   └── Sistemi di Numerazione Posizionale e Aritmetica Binaria.md
 └── Geometria e Algebra
     ├── Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali.md
     └── Prodotto Matricale e Algoritmo di Gauss Jordan.md
 
-5 directories, 8 files
+5 directories, 9 files
 ```
