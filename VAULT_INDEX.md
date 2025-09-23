@@ -15,9 +15,10 @@ Questo file viene aggiornato automaticamente e contiene la lista di tutte le not
 │   ├── Rappresentazione Binaria dei Numeri Interi Relativi.md
 │   └── Sistemi di Numerazione Posizionale e Aritmetica Binaria.md
 └── Geometria e Algebra
+    ├── Algoritmo di Eliminazione di Gauss Jordan.md
     ├── Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali.md
     ├── Prodotto Matricale e Algoritmo di Gauss Jordan.md
     └── Rango, Invertibilità delle Matrici e Permutazioni.md
 
-5 directories, 10 files
+5 directories, 11 files
 ```
