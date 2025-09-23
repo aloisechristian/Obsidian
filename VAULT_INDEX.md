@@ -16,7 +16,8 @@ Questo file viene aggiornato automaticamente e contiene la lista di tutte le not
 │   └── Sistemi di Numerazione Posizionale e Aritmetica Binaria.md
 └── Geometria e Algebra
     ├── Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali.md
-    └── Prodotto Matricale e Algoritmo di Gauss Jordan.md
+    ├── Prodotto Matricale e Algoritmo di Gauss Jordan.md
+    └── Rango, Invertibilità delle Matrici e Permutazioni.md
 
-5 directories, 9 files
+5 directories, 10 files
 ```
