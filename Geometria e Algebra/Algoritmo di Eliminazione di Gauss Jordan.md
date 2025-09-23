@@ -37,5 +37,6 @@ Questa fase trasforma la matrice da forma a scala a **forma a scala ridotta**.
 
 L'algoritmo di Gauss-Jordan è lo strumento operativo per:
 
--   **[[Rango e Invertibilità di una Matrice#Il Rango di una Matrice|Calcolare il rango di una matrice]]**
--   **[[Rango e Invertibilità di una Matrice#Algoritmo per il Calcolo della Matrice Inversa|Calcolare la matrice inversa]]**
+
+- [[Rango, Invertibilità delle Matrici e Permutazioni#Il Rango di una Matrice|Calcolare il rango di una matrice]]
+- [[Rango, Invertibilità delle Matrici e Permutazioni#Algoritmo per il Calcolo della Matrice Inversa|Calcolare la matrice inversa]]
