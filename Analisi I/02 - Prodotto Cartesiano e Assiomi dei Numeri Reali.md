@@ -55,7 +55,7 @@ Per colmare queste lacune, si introducono:
 2.  **$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$**: L'insieme degli **interi relativi**, che include gli opposti di ogni numero, soddisfacendo così l'assioma dell'esistenza dell'opposto. In $\mathbb{Z}$, però, non è garantita l'esistenza dell'inverso moltiplicativo per ogni elemento (ad eccezione di $\pm 1$).
 3.  **$\mathbb{Q} = \{ \frac{m}{n} \mid m \in \mathbb{Z}, n \in \mathbb{Z} \setminus \{0\} \}$**: L'insieme dei **numeri razionali**, che introduce le frazioni e soddisfa l'assioma dell'esistenza dell'inverso.
 
-Otteniamo così una [[Insiemi Numerici, Completezza e Estremo Superiore|catena di inclusioni strette]]:
+Otteniamo così una [[03 - Insiemi Numerici, Completezza e Estremo Superiore|catena di inclusioni strette]]:
 $$ \mathbb{N} \subset \mathbb{N}_0 \subset \mathbb{Z} \subset \mathbb{Q} \subseteq \mathbb{R} $$
 L'insieme $\mathbb{Q}$ soddisfa tutti gli assiomi algebrici e di ordinamento, ma, come vedremo, non gode dell'**assioma di completezza**, il che rende l'ultima inclusione stretta ($\subset$) e non un'uguaglianza.
 

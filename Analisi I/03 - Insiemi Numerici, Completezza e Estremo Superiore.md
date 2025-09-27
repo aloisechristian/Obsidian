@@ -4,15 +4,15 @@
 
 Il sistema dei numeri reali, denotato con $\mathbb{R}$, è fondato su un insieme di assiomi che ne definiscono la struttura. Questi assiomi si possono raggruppare in tre categorie principali:
 
-1.  **[[Prodotto Cartesiano e Assiomi dei Numeri Reali#^e1bb55|Assiomi relativi alle operazioni]]:** Definiscono le proprietà delle operazioni di somma (+) e moltiplicazione (·), tra cui:
+1.  **[[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#^e1bb55|Assiomi relativi alle operazioni]]:** Definiscono le proprietà delle operazioni di somma (+) e moltiplicazione (·), tra cui:
     *   Proprietà Associativa
     *   Proprietà Commutativa
     *   Proprietà Distributiva
     *   Esistenza degli elementi neutri (0 per la somma, 1 per la moltiplicazione)
     *   Esistenza degli opposti (per ogni numero $a$, esiste $-a$ tale che $a + (-a) = 0$)
     *   Esistenza degli inversi (per ogni numero $a \neq 0$, esiste $a^{-1}$ tale che $a \cdot a^{-1} = 1$)
-2.  **[[Prodotto Cartesiano e Assiomi dei Numeri Reali#^6ced7f|Assiomi di Ordinamento]]:** Introducono la relazione d'ordine $\le$ e ne stabiliscono le proprietà di compatibilità con le operazioni algebriche.
-3.  **[[Prodotto Cartesiano e Assiomi dei Numeri Reali#^240591|Assioma di Completezza]]:** Questo assioma distingue l'insieme dei numeri reali $\mathbb{R}$ dall'insieme dei numeri razionali $\mathbb{Q}$ e garantisce l'assenza di "buchi" sulla retta reale.
+2.  **[[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#^6ced7f|Assiomi di Ordinamento]]:** Introducono la relazione d'ordine $\le$ e ne stabiliscono le proprietà di compatibilità con le operazioni algebriche.
+3.  **[[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#^240591|Assioma di Completezza]]:** Questo assioma distingue l'insieme dei numeri reali $\mathbb{R}$ dall'insieme dei numeri razionali $\mathbb{Q}$ e garantisce l'assenza di "buchi" sulla retta reale.
 
 ### 2. Dagli Assiomi alla Gerarchia degli Insiemi Numerici
 
@@ -100,7 +100,7 @@ Supponiamo per assurdo che esistano due massimi distinti, $M_1$ e $M_2$. Per def
 2.  $M_2$ è un maggiorante di A e $M_2 \in A$.
 Dato che $M_1$ è un maggiorante e $M_2 \in A$, deve valere $M_1 \ge M_2$.
 Dato che $M_2$ è un maggiorante e $M_1 \in A$, deve valere $M_2 \ge M_1$.
-Dalla doppia disuguaglianza $M_1 \ge M_2$ e $M_2 \ge M_1$, per la [[Prodotto Cartesiano e Assiomi dei Numeri Reali#^a37a9a|proprietà asimmetrica]], segue necessariamente che $M_1 = M_2$. Ciò dimostra l'unicità.
+Dalla doppia disuguaglianza $M_1 \ge M_2$ e $M_2 \ge M_1$, per la [[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#^a37a9a|proprietà asimmetrica]], segue necessariamente che $M_1 = M_2$. Ciò dimostra l'unicità.
 
 ### 4.2 Maggioranti, Minoranti, Estremo Superiore e Inferiore
 *   Un numero $L \in \mathbb{R}$ è un **maggiorante** per $A$ se $L \ge a$ per ogni $a \in A$. ^857746

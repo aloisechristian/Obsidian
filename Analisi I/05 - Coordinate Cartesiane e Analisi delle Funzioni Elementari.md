@@ -2,7 +2,7 @@
 
 ## 1. Rappresentazione Geometrica dei Numeri Reali e Punti nel Piano
 
-Questa sezione riesamina la rappresentazione geometrica dei [[Insiemi Numerici, Completezza e Estremo Superiore|numeri reali]] su una retta e la estende alla rappresentazione dei punti in un piano cartesiano.
+Questa sezione riesamina la rappresentazione geometrica dei [[03 - Insiemi Numerici, Completezza e Estremo Superiore|numeri reali]] su una retta e la estende alla rappresentazione dei punti in un piano cartesiano.
 
 ### 1.1 La Retta Reale e l'Ascissa di un Punto
 
@@ -20,12 +20,12 @@ Per estendere la rappresentazione a un punto $P$ nel piano, si introduce un **si
 1.  Un punto fisso $O$, detto **origine**.
 2.  Due rette orientate e perpendicolari passanti per $O$, chiamate **assi cartesiani** (l'asse $Ox$ o **asse delle ascisse** e l'asse $Oy$ o **asse delle ordinate**).
 
-Un punto $P$ nel piano è univocamente descritto da una **[[Prodotto Cartesiano e Assiomi dei Numeri Reali#Definizione per due Insiemi|coppia ordinata]]** di numeri reali $(x, y)$, dove $x$ e $y$ sono le sue **coordinate cartesiane ortogonali**. Queste coordinate sono determinate tramite proiezioni ortogonali:
+Un punto $P$ nel piano è univocamente descritto da una **[[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#Definizione per due Insiemi|coppia ordinata]]** di numeri reali $(x, y)$, dove $x$ e $y$ sono le sue **coordinate cartesiane ortogonali**. Queste coordinate sono determinate tramite proiezioni ortogonali:
 
 *   Si proietta il punto $P$ sull'asse $Ox$, ottenendo un punto $P_x$. La coordinata $x$ è l'**ascissa** di $P_x$ sull'asse $Ox$.
 *   Si proietta il punto $P$ sull'asse $Oy$, ottenendo un punto $P_y$. La coordinata $y$ è l'**ordinata** di $P_y$ sull'asse $Oy$.
 
-Si stabilisce così una corrispondenza biunivoca tra i punti del piano e l'insieme delle coppie ordinate di numeri reali, denotato come $\mathbb{R}^2$, che è il [[Prodotto Cartesiano e Assiomi dei Numeri Reali|prodotto cartesiano]] di $\mathbb{R}$ per se stesso.
+Si stabilisce così una corrispondenza biunivoca tra i punti del piano e l'insieme delle coppie ordinate di numeri reali, denotato come $\mathbb{R}^2$, che è il [[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali|prodotto cartesiano]] di $\mathbb{R}$ per se stesso.
 
 ## 2. Funzioni Monotone
 
@@ -33,12 +33,12 @@ Si stabilisce così una corrispondenza biunivoca tra i punti del piano e l'insie
 
 Sia $f: X \to Y$ una [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]] con $X, Y \subseteq \mathbb{R}$.
 
-*   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione crescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) \leq f(x_2)$.
-*   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione decrescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) \geq f(x_2)$.
-*   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione strettamente crescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) < f(x_2)$.
-*   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione strettamente decrescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) > f(x_2)$.
+*   **[[04 - Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione crescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) \leq f(x_2)$.
+*   **[[04 - Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione decrescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) \geq f(x_2)$.
+*   **[[04 - Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione strettamente crescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) < f(x_2)$.
+*   **[[04 - Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione strettamente decrescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) > f(x_2)$.
 
-Una funzione si dice **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|monotona]]** se è crescente oppure decrescente. Si dice **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|strettamente monotona]]** se è strettamente crescente o strettamente decrescente.
+Una funzione si dice **[[04 - Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|monotona]]** se è crescente oppure decrescente. Si dice **[[04 - Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|strettamente monotona]]** se è strettamente crescente o strettamente decrescente.
 
 ### 2.2 Proprietà delle Funzioni Monotone
 
@@ -98,11 +98,11 @@ La funzione **valore assoluto** (o **modulo**) di $x \in \mathbb{R}$ è definita
 $$|x| = \begin{cases} x & \text{se } x \ge 0 \\ -x & \text{se } x < 0 \end{cases}$$
 
 *   **[[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|Dominio]]**: $\mathbb{R}$.
-*   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Estensione dei Concetti alle Funzioni Reali|Codominio (o insieme delle immagini)]]**: $\mathbb{R}^+ \cup \{0\}$, ovvero l'[[Insiemi Numerici, Completezza e Estremo Superiore#Intervalli in R|intervallo]] $[0, +\infty)$.
+*   **[[04 - Estremi Superiori e Inferiori per Insiemi e Funzioni#Estensione dei Concetti alle Funzioni Reali|Codominio (o insieme delle immagini)]]**: $\mathbb{R}^+ \cup \{0\}$, ovvero l'[[03 - Insiemi Numerici, Completezza e Estremo Superiore#Intervalli in R|intervallo]] $[0, +\infty)$.
 *   **Proprietà**:
     -   È [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Suriettiva (o Suriezione)|suriettiva]] se considerata come $f: \mathbb{R} \to [0, +\infty)$.
     -   **Non è [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Iniettiva (o Iniezione)|iniettiva]]**, in quanto per ogni $a \ne 0$, si ha $a \ne -a$ ma $f(a) = f(-a) = |a|$.
-*   **[[Prodotto Cartesiano e Assiomi dei Numeri Reali#Il Grafico di una Funzione|Grafico]]**: Il grafico è composto da due semirette:
+*   **[[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#Il Grafico di una Funzione|Grafico]]**: Il grafico è composto da due semirette:
     *   La bisettrice del primo quadrante, $y=x$, per $x \ge 0$.
     *   La bisettrice del secondo quadrante, $y=-x$, per $x < 0$.
 

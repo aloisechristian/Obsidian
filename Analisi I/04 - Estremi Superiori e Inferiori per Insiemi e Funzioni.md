@@ -4,7 +4,7 @@ In questa lezione, si approfondiscono i concetti di massimo, minimo, estremo sup
 
 ## Definizioni per Sottoinsiemi di $\mathbb{R}$
 
-Sia $A$ un sottoinsieme non vuoto di [[Insiemi Numerici, Completezza e Estremo Superiore|$\mathbb{R}$]].
+Sia $A$ un sottoinsieme non vuoto di [[03 - Insiemi Numerici, Completezza e Estremo Superiore|$\mathbb{R}$]].
 
 ### Massimo e Minimo
 
@@ -25,12 +25,12 @@ Supponiamo per assurdo che esistano due massimi distinti, $M_1$ e $M_2$. Per def
 2.  $M_2$ è un maggiorante di A e $M_2 \in A$.
 Poiché $M_1$ è un maggiorante e $M_2 \in A$, deve valere $M_1 \ge M_2$.
 Allo stesso modo, poiché $M_2$ è un maggiorante e $M_1 \in A$, deve valere $M_2 \ge M_1$.
-Dalla doppia disuguaglianza $M_1 \ge M_2$ e $M_2 \ge M_1$, per la [[Prodotto Cartesiano e Assiomi dei Numeri Reali#^a37a9a|proprietà asimmetrica]] della relazione d'ordine, segue necessariamente che $M_1 = M_2$.
+Dalla doppia disuguaglianza $M_1 \ge M_2$ e $M_2 \ge M_1$, per la [[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#^a37a9a|proprietà asimmetrica]] della relazione d'ordine, segue necessariamente che $M_1 = M_2$.
 
 ### Maggioranti, Minoranti e Insiemi Limitati
 
-- Un numero reale $L$ è detto **[[Insiemi Numerici, Completezza e Estremo Superiore#^857746|maggiorante]]** di $A$ se $L \geq a$ per ogni $a \in A$.
-- Un numero reale $l$ è detto **[[Insiemi Numerici, Completezza e Estremo Superiore#^d4db6f|minorante]]** di $A$ se $l \leq a$ per ogni $a \in A$.
+- Un numero reale $L$ è detto **[[03 - Insiemi Numerici, Completezza e Estremo Superiore#^857746|maggiorante]]** di $A$ se $L \geq a$ per ogni $a \in A$.
+- Un numero reale $l$ è detto **[[03 - Insiemi Numerici, Completezza e Estremo Superiore#^d4db6f|minorante]]** di $A$ se $l \leq a$ per ogni $a \in A$.
 
 - Un insieme $A$ si dice **limitato superiormente** se ammette almeno un maggiorante.
 - Un insieme $A$ si dice **limitato inferiormente** se ammette almeno un minorante.
@@ -39,7 +39,7 @@ Dalla doppia disuguaglianza $M_1 \ge M_2$ e $M_2 \ge M_1$, per la [[Prodotto Car
 ### Estremo Superiore (Sup) e Estremo Inferiore (Inf)
 
 #### Ruolo dell'Assioma di Completezza
-L'**[[Prodotto Cartesiano e Assiomi dei Numeri Reali#^240591|assioma di completezza]]** è la proprietà che distingue $\mathbb{R}$ da $\mathbb{Q}$. Una sua conseguenza fondamentale è il seguente teorema:
+L'**[[02 - Prodotto Cartesiano e Assiomi dei Numeri Reali#^240591|assioma di completezza]]** è la proprietà che distingue $\mathbb{R}$ da $\mathbb{Q}$. Una sua conseguenza fondamentale è il seguente teorema:
 
 **Teorema:** Ogni sottoinsieme non vuoto e limitato superiormente di $\mathbb{R}$ ammette un **estremo superiore** (sup), che è il minimo dell'insieme dei suoi maggioranti. Analogamente, ogni sottoinsieme non vuoto e limitato inferiormente di $\mathbb{R}$ ammette un **estremo inferiore** (inf), che è il massimo dell'insieme dei suoi minoranti.
 
