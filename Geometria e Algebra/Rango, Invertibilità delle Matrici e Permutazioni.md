@@ -84,7 +84,7 @@ Sebbene l'algoritmo di Gauss-Jordan sia un metodo completo, può risultare compu
 
 ### Introduzione alle Permutazioni
 
-Sia $S = \{1, 2, \dots, n\}$ un insieme finito. Una **permutazione** di $S$ è una [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Biettiva (o Biiezione)|funzione biettiva]] $\sigma: S \to S$.
+Sia $S = \{1, 2, \dots, n\}$ un insieme finito. Una **permutazione** di $S$ è una [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Biettiva (o Biiezione)|funzione biettiva]] $\sigma: S \to S$.
 
 - **Notazione:** Una permutazione $\sigma$ si rappresenta con la sequenza delle immagini $(\sigma(1), \sigma(2), \dots, \sigma(n))$. L'insieme di tutte le permutazioni di $n$ elementi si denota con $S_n$.
 - **Cardinalità:** Il numero di permutazioni di $n$ elementi è $\#S_n = n!$.

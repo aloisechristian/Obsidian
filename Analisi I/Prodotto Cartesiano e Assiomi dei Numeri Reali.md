@@ -1,6 +1,6 @@
 ## Introduzione e Richiami
 
-Nelle lezioni precedenti sono stati introdotti i concetti fondamentali di **[[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Insieme e Notazioni|insieme]]**, le operazioni insiemistiche (unione, intersezione, differenza) e la definizione di **[[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]]** come una legge che associa a ogni elemento $x$ di un insieme di partenza $X$ un unico elemento $y$ di un insieme di arrivo $Y$.
+Nelle lezioni precedenti sono stati introdotti i concetti fondamentali di **[[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Insieme e Notazioni|insieme]]**, le operazioni insiemistiche (unione, intersezione, differenza) e la definizione di **[[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]]** come una legge che associa a ogni elemento $x$ di un insieme di partenza $X$ un unico elemento $y$ di un insieme di arrivo $Y$.
 
 La lezione odierna prosegue approfondendo la teoria degli insiemi con l'introduzione del prodotto cartesiano e, successivamente, stabilisce le fondamenta del calcolo infinitesimale attraverso la presentazione della **struttura assiomatica dell'insieme dei numeri reali** $\mathbb{R}$. Gli assiomi sono proposizioni fondamentali accettate come vere senza dimostrazione, dalle quali discendono, tramite deduzione logica, teoremi, lemmi e corollari che costituiscono l'intera teoria matematica.
 

@@ -72,9 +72,9 @@ Il viceversa non è sempre vero. Un insieme può avere estremo inferiore o super
 
 ## Estensione dei Concetti alle Funzioni Reali
 
-Poiché il **[[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|codominio]]** (o insieme delle immagini) di una funzione reale $f(X)$ è un insieme numerico, ad esso possono essere applicate tutte le nozioni di limitatezza, massimo, minimo, estremo superiore e inferiore.
+Poiché il **[[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|codominio]]** (o insieme delle immagini) di una funzione reale $f(X)$ è un insieme numerico, ad esso possono essere applicate tutte le nozioni di limitatezza, massimo, minimo, estremo superiore e inferiore.
 
-Sia $f: X \to Y$ una [[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]], con $X, Y \subseteq \mathbb{R}$.
+Sia $f: X \to Y$ una [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]], con $X, Y \subseteq \mathbb{R}$.
 
 ### Funzioni Limitate e Illimitate
 - Una funzione $f$ si dice **limitata superiormente** se il suo codominio $f(X)$ è un insieme limitato superiormente.

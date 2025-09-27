@@ -6,7 +6,7 @@ Questa sezione riesamina la rappresentazione geometrica dei [[Insiemi Numerici, 
 
 ### 1.1 La Retta Reale e l'Ascissa di un Punto
 
-La rappresentazione geometrica dei numeri reali si basa su una [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Biettiva (o Biiezione)|corrispondenza biunivoca]] tra i numeri reali e i punti di una retta. Fissando un punto $O$ detto **origine** e un'unità di misura, la retta viene orientata e suddivisa in due semirette:
+La rappresentazione geometrica dei numeri reali si basa su una [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Biettiva (o Biiezione)|corrispondenza biunivoca]] tra i numeri reali e i punti di una retta. Fissando un punto $O$ detto **origine** e un'unità di misura, la retta viene orientata e suddivisa in due semirette:
 
 *   La **semiretta positiva** ($R^+$).
 *   La **semiretta negativa** ($R^-$).
@@ -31,7 +31,7 @@ Si stabilisce così una corrispondenza biunivoca tra i punti del piano e l'insie
 
 ### 2.1 Definizioni di Monotonia
 
-Sia $f: X \to Y$ una [[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]] con $X, Y \subseteq \mathbb{R}$.
+Sia $f: X \to Y$ una [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|funzione]] con $X, Y \subseteq \mathbb{R}$.
 
 *   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione crescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) \leq f(x_2)$.
 *   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Monotonia delle Funzioni|Funzione decrescente]]**: $\forall x_1, x_2 \in X, x_1 < x_2 \implies f(x_1) \geq f(x_2)$.
@@ -50,14 +50,14 @@ Se una funzione $f$ è crescente, la sua funzione opposta, $-f$, è decrescente.
 
 #### Teorema sulla Monotonia della Funzione Inversa
 
-Sia $f: X \to Y$ una [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Inversa e Funzione Composta|funzione invertibile]].
+Sia $f: X \to Y$ una [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Inversa e Funzione Composta|funzione invertibile]].
 *   Se $f$ è strettamente crescente, allora anche la sua funzione inversa $f^{-1}$ è strettamente crescente.
 *   Se $f$ è strettamente decrescente, allora anche la sua funzione inversa $f^{-1}$ è strettamente decrescente.
 
 *Dimostrazione (per il caso strettamente crescente)*: Si procede con una [[Concetti Trasversali/Tecniche Algoritmiche e Dimostrative#Dimostrazione per Assurdo|dimostrazione per assurdo]].
 1.  **Ipotesi**: $f$ è strettamente crescente.
 2.  **Tesi da negare**: Supponiamo per assurdo che $f^{-1}$ non sia strettamente crescente. Ciò implica che esistono $y_1, y_2 \in Y$ tali che $y_1 < y_2$ ma $f^{-1}(y_1) \ge f^{-1}(y_2)$.
-3.  Poiché $f$ è invertibile, è anche [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Iniettiva (o Iniezione)|iniettiva]]. Di conseguenza, $f^{-1}$ è iniettiva, e l'uguaglianza $f^{-1}(y_1) = f^{-1}(y_2)$ è esclusa per $y_1 \ne y_2$. Pertanto, deve essere $f^{-1}(y_1) > f^{-1}(y_2)$.
+3.  Poiché $f$ è invertibile, è anche [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Iniettiva (o Iniezione)|iniettiva]]. Di conseguenza, $f^{-1}$ è iniettiva, e l'uguaglianza $f^{-1}(y_1) = f^{-1}(y_2)$ è esclusa per $y_1 \ne y_2$. Pertanto, deve essere $f^{-1}(y_1) > f^{-1}(y_2)$.
 4.  Siano $x_1 = f^{-1}(y_1)$ e $x_2 = f^{-1}(y_2)$. La disuguaglianza diventa $x_1 > x_2$.
 5.  Applichiamo la funzione $f$ a entrambi i membri di $x_1 > x_2$. Poiché $f$ è strettamente crescente per ipotesi, il verso della disuguaglianza si conserva: $f(x_1) > f(x_2)$.
 6.  Sostituendo nuovamente le definizioni di $x_1$ e $x_2$, otteniamo $y_1 > y_2$.
@@ -74,10 +74,10 @@ Si chiama funzione lineare una funzione del tipo $y = mx+q$, dove $m$ e $q$ sono
 #### Analisi dei casi
 1.  **Caso $m = 0$**: La funzione diventa costante, $f(x) = q$.
     -   Il suo grafico è una retta orizzontale di equazione $y=q$.
-    -   Non è [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Iniettiva (o Iniezione)|iniettiva]]: a tutti gli $x$ distinti corrisponde la stessa immagine $q$.
-    -   Non è [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Suriettiva (o Suriezione)|suriettiva]] (su $\mathbb{R}$): l'unico valore assunto è $q$, quindi nessun $y \neq q$ ha una controimmagine.
+    -   Non è [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Iniettiva (o Iniezione)|iniettiva]]: a tutti gli $x$ distinti corrisponde la stessa immagine $q$.
+    -   Non è [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Suriettiva (o Suriezione)|suriettiva]] (su $\mathbb{R}$): l'unico valore assunto è $q$, quindi nessun $y \neq q$ ha una controimmagine.
 
-2.  **Caso $m \neq 0$**: La funzione è [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Biettiva (o Biiezione)|biettiva]] (iniettiva e suriettiva).
+2.  **Caso $m \neq 0$**: La funzione è [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Biettiva (o Biiezione)|biettiva]] (iniettiva e suriettiva).
     -   **Iniettività**: Dati $x_1 \neq x_2$, se per assurdo $f(x_1) = f(x_2)$, allora $mx_1+q = mx_2+q$. Per la regola di semplificazione della somma, si ha $mx_1 = mx_2$. Dividendo per $m \neq 0$, si ottiene $x_1 = x_2$, il che contraddice l'ipotesi.
     -   **Suriettività**: Per ogni $y \in \mathbb{R}$, è possibile trovare una $x$ tale che $f(x)=y$. Risolvendo l'equazione $y = mx+q$ rispetto a $x$, si ottiene $x = \frac{y-q}{m}$. Questa è l'espressione della funzione inversa.
 
@@ -97,11 +97,11 @@ La funzione **valore assoluto** (o **modulo**) di $x \in \mathbb{R}$ è definita
 
 $$|x| = \begin{cases} x & \text{se } x \ge 0 \\ -x & \text{se } x < 0 \end{cases}$$
 
-*   **[[Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|Dominio]]**: $\mathbb{R}$.
+*   **[[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Definizione di Funzione|Dominio]]**: $\mathbb{R}$.
 *   **[[Estremi Superiori e Inferiori per Insiemi e Funzioni#Estensione dei Concetti alle Funzioni Reali|Codominio (o insieme delle immagini)]]**: $\mathbb{R}^+ \cup \{0\}$, ovvero l'[[Insiemi Numerici, Completezza e Estremo Superiore#Intervalli in R|intervallo]] $[0, +\infty)$.
 *   **Proprietà**:
-    -   È [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Suriettiva (o Suriezione)|suriettiva]] se considerata come $f: \mathbb{R} \to [0, +\infty)$.
-    -   **Non è [[Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Iniettiva (o Iniezione)|iniettiva]]**, in quanto per ogni $a \ne 0$, si ha $a \ne -a$ ma $f(a) = f(-a) = |a|$.
+    -   È [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Suriettiva (o Suriezione)|suriettiva]] se considerata come $f: \mathbb{R} \to [0, +\infty)$.
+    -   **Non è [[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Funzione Iniettiva (o Iniezione)|iniettiva]]**, in quanto per ogni $a \ne 0$, si ha $a \ne -a$ ma $f(a) = f(-a) = |a|$.
 *   **[[Prodotto Cartesiano e Assiomi dei Numeri Reali#Il Grafico di una Funzione|Grafico]]**: Il grafico è composto da due semirette:
     *   La bisettrice del primo quadrante, $y=x$, per $x \ge 0$.
     *   La bisettrice del secondo quadrante, $y=-x$, per $x < 0$.
@@ -124,4 +124,4 @@ Sia $R \ge 0$. Valgono le seguenti equivalenze fondamentali:
 *   **Caso A ($x \ge 0$)**: La disequazione $|x| \le R$ diventa $x \le R$. L'intersezione con la condizione del caso, $\{x \mid x \ge 0\} \cap \{x \mid x \le R\}$, fornisce la soluzione $\{x \mid 0 \le x \le R\}$.
 *   **Caso B ($x < 0$)**: La disequazione $|x| \le R$ diventa $-x \le R$, che, moltiplicando per $-1$, equivale a $x \ge -R$. L'intersezione con la condizione del caso, $\{x \mid x < 0\} \cap \{x \mid x \ge -R\}$, fornisce la soluzione $\{x \mid -R \le x < 0\}$.
 
-L'[[Fondamenti di Teoria degli Insiemi e Funzioni#Operazioni Fondamentali tra Insiemi|unione]] delle soluzioni dei due casi, $[-R, 0) \cup [0, R]$, fornisce la soluzione completa $-R \le x \le R$.
+L'[[01 - Fondamenti di Teoria degli Insiemi e Funzioni#Operazioni Fondamentali tra Insiemi|unione]] delle soluzioni dei due casi, $[-R, 0) \cup [0, R]$, fornisce la soluzione completa $-R \le x \le R$.
