@@ -150,7 +150,7 @@ La condizione di overflow è facilmente rilevabile: **si ha overflow se e solo s
 
 ## 5. Rappresentazione per Eccesso K (o con Bias)
 
-Questa rappresentazione è meno comune per l'aritmetica intera generica, ma trova un'applicazione cruciale nella rappresentazione dell'esponente nei numeri in [[Rappresentazione dei Numeri Reali in Virgola Mobile#^ae91d1|virgola mobile (standard IEEE 754)]].
+Questa rappresentazione è meno comune per l'aritmetica intera generica, ma trova un'applicazione cruciale nella rappresentazione dell'esponente nei numeri in [[04 - Rappresentazione dei Numeri Reali in Virgola Mobile#^ae91d1|virgola mobile (standard IEEE 754)]].
 
 ### Principio di Funzionamento
 Un numero intero $x$ viene rappresentato dalla codifica in binario puro di un valore traslato $y = x+k$, dove $k$ è una costante intera positiva chiamata **eccesso** o **bias**.
