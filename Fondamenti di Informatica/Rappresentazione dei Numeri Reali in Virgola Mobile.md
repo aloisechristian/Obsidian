@@ -61,7 +61,7 @@ Le quantità da memorizzare sono tre: il segno $S$, la mantissa $M$ e l'esponent
 
 I 32 bit sono così suddivisi:
 - **Bit di Segno (S)**: 1 bit (il più significativo, $b_{31}$). $0$ per positivo, $1$ per negativo.
-- **Esponente (E)**: 8 bit ($b_{30}...b_{23}$). Rappresentato in **[[Fondamenti di Informatica/Rappresentazione Binaria dei Numeri Interi Relativi#5. Rappresentazione per Eccesso K (o con Bias)|eccesso 127]]**.
+- **Esponente (E)**: 8 bit ($b_{30}...b_{23}$). Rappresentato in **[[03 - Rappresentazione Binaria dei Numeri Interi Relativi#5. Rappresentazione per Eccesso K (o con Bias)|eccesso 127]]**.
 - **Mantissa (M)**: 23 bit ($b_{22}...b_0$). Rappresenta la parte frazionaria della mantissa normalizzata.
 
 La formula per ricostruire il valore è:
@@ -128,7 +128,7 @@ Convertire il numero a 32 bit: `1 10000001 01000000000000000000000`
 Convertire il numero decimale `8.5` in formato IEEE 754 a precisione singola.
 
 1.  **Segno (S)**: Il numero è positivo, quindi il bit di segno è **0**.
-2.  **[[Fondamenti di Informatica/Sistemi di Numerazione Posizionale e Aritmetica Binaria#Conversione da Decimale a Binario|Conversione in Binario]]**: 
+2.  **[[02 - Sistemi di Numerazione Posizionale e Aritmetica Binaria#Conversione da Decimale a Binario|Conversione in Binario]]**: 
     - Parte intera: $8_{10} = 1000_2$.
     - Parte frazionaria: $0.5_{10} = \frac{1}{2} = .1_2$.
     - Numero binario completo: $1000.1_2$.

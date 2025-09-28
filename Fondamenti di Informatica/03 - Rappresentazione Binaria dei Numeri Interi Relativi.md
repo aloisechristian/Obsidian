@@ -1,6 +1,6 @@
 # Introduzione alla Rappresentazione dei Numeri Relativi
 
-La discussione precedente si è concentrata sulla rappresentazione dei numeri naturali (interi non negativi) nel [[Sistemi di Numerazione Posizionale e Aritmetica Binaria#Rappresentazione Polinomiale di un Numero|sistema binario]]. La presente lezione estende tale analisi ai numeri interi relativi, che includono valori sia positivi sia negativi. Per codificare l'informazione aggiuntiva del segno, è necessario adottare schemi di rappresentazione specifici. Verranno analizzate tre principali metodologie: segno e modulo, complemento a uno e a due, e rappresentazione per eccesso K. L'obiettivo è comprendere il funzionamento, i vantaggi e gli svantaggi di ciascuna codifica, con un'attenzione particolare alle implicazioni per le operazioni aritmetiche.
+La discussione precedente si è concentrata sulla rappresentazione dei numeri naturali (interi non negativi) nel [[02 - Sistemi di Numerazione Posizionale e Aritmetica Binaria#Rappresentazione Polinomiale di un Numero|sistema binario]]. La presente lezione estende tale analisi ai numeri interi relativi, che includono valori sia positivi sia negativi. Per codificare l'informazione aggiuntiva del segno, è necessario adottare schemi di rappresentazione specifici. Verranno analizzate tre principali metodologie: segno e modulo, complemento a uno e a due, e rappresentazione per eccesso K. L'obiettivo è comprendere il funzionamento, i vantaggi e gli svantaggi di ciascuna codifica, con un'attenzione particolare alle implicazioni per le operazioni aritmetiche.
 
 ## 1. Rappresentazione in Segno e Modulo
 
@@ -124,7 +124,7 @@ Con questa codifica è possibile rappresentare un numero negativo in più rispet
 ### Conversione da Complemento a 2 a Decimale
 Esistono due metodi principali per convertire una stringa binaria negativa in C2:
 
-1.  **Metodo della Somma Pesata con MSB Negativo**: Si tratta la stringa come un numero in [[Sistemi di Numerazione Posizionale e Aritmetica Binaria#Rappresentazione Polinomiale di un Numero|notazione posizionale]], ma si assegna al bit più significativo (MSB) un peso **negativo**. Per una stringa $c_{L-1}c_{L-2}...c_0$:
+1.  **Metodo della Somma Pesata con MSB Negativo**: Si tratta la stringa come un numero in [[02 - Sistemi di Numerazione Posizionale e Aritmetica Binaria#Rappresentazione Polinomiale di un Numero|notazione posizionale]], ma si assegna al bit più significativo (MSB) un peso **negativo**. Per una stringa $c_{L-1}c_{L-2}...c_0$:
     $$ \text{Valore} = -c_{L-1} \cdot 2^{L-1} + \sum_{j=0}^{L-2} c_j \cdot 2^j $$
     **Esempio:** Convertire `101111` ($L=6$).
     $$ \text{Valore} = -1 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 1 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 = -32 + 8 + 4 + 2 + 1 = -17 $$

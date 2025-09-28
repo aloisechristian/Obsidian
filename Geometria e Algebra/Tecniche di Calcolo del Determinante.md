@@ -30,9 +30,9 @@ $$ \det(A) = 0 $$
 
 ## 2. Sviluppo di Laplace (Metodo dei Cofattori)
 
-Il [[Geometria e Algebra/Proprietà dei Determinanti, Teorema di Binet e Sviluppo di Laplace#Teorema di Laplace per il Calcolo del Determinante|teorema di Laplace]] fornisce un metodo di calcolo ricorsivo che riduce il determinante di una matrice $n \times n$ a una somma di determinanti di matrici $(n-1) \times (n-1)$.
+Il [[04 - Proprietà dei Determinanti, Teorema di Binet e Sviluppo di Laplace#Teorema di Laplace per il Calcolo del Determinante|teorema di Laplace]] fornisce un metodo di calcolo ricorsivo che riduce il determinante di una matrice $n \times n$ a una somma di determinanti di matrici $(n-1) \times (n-1)$.
 
-1.  **Sviluppo lungo la riga i-esima**: Si sceglie una riga $i$ e si calcola la somma dei prodotti di ogni elemento $a_{ij}$ di quella riga per il suo [[Geometria e Algebra/Proprietà dei Determinanti, Teorema di Binet e Sviluppo di Laplace#1. Sottomatrici, Minori e Cofattori|cofattore]] $a_{ij}^* = (-1)^{i+j} |A_{ij}|$.
+1.  **Sviluppo lungo la riga i-esima**: Si sceglie una riga $i$ e si calcola la somma dei prodotti di ogni elemento $a_{ij}$ di quella riga per il suo [[04 - Proprietà dei Determinanti, Teorema di Binet e Sviluppo di Laplace#1. Sottomatrici, Minori e Cofattori|cofattore]] $a_{ij}^* = (-1)^{i+j} |A_{ij}|$.
     $$ \det(A) = \sum_{j=1}^{n} a_{ij} \cdot a_{ij}^* $$
 
 2.  **Sviluppo lungo la colonna j-esima**: Analogamente, si sceglie una colonna $j$.
