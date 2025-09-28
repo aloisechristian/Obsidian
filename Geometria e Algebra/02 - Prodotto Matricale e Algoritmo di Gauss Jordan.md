@@ -2,10 +2,10 @@
 
 Nelle lezioni precedenti sono state introdotte le nozioni fondamentali relative alle matrici. Di seguito, un breve riepilogo degli argomenti trattati:
 
-1.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#^1f6aea|Definizione di Matrice]]:** Introduzione al concetto di matrice come tabella rettangolare di numeri.
-2.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Operazioni Elementari con le Matrici|Uguaglianza, Somma e Sottrazione]]:** Operazioni definite per matrici delle stesse dimensioni.
-3.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Proprietà della Somma e della Moltiplicazione Scalare|Trasposizione]]:** Operazione che scambia le righe con le colonne di una matrice.
-4.  **[[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Moltiplicazione per uno Scalare|Moltiplicazione per uno Scalare]]:** Prodotto di una matrice per un numero (scalare).
+1.  **[[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#^1f6aea|Definizione di Matrice]]:** Introduzione al concetto di matrice come tabella rettangolare di numeri.
+2.  **[[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Operazioni Elementari con le Matrici|Uguaglianza, Somma e Sottrazione]]:** Operazioni definite per matrici delle stesse dimensioni.
+3.  **[[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Proprietà della Somma e della Moltiplicazione Scalare|Trasposizione]]:** Operazione che scambia le righe con le colonne di una matrice.
+4.  **[[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Moltiplicazione per uno Scalare|Moltiplicazione per uno Scalare]]:** Prodotto di una matrice per un numero (scalare).
 
 L'ultima operazione introdotta è stata la **moltiplicazione riga per colonna** tra due matrici.
 
@@ -58,7 +58,7 @@ In analogia con l'aritmetica dei numeri reali, dove la divisione $a/b$ può esse
 
 ### La Matrice Identità come Elemento Neutro
 
-L'elemento neutro esiste solo nel contesto delle matrici quadrate. La **matrice identità** di ordine $n$, denotata con $I_n$, è una matrice quadrata $n \times n$ con tutti 1 sulla diagonale principale e 0 altrove. La matrice identità è un caso particolare di [[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice diagonale]]. Essa agisce come l'elemento neutro per la moltiplicazione, ovvero per qualsiasi matrice quadrata $A$ di dimensione $n \times n$:
+L'elemento neutro esiste solo nel contesto delle matrici quadrate. La **matrice identità** di ordine $n$, denotata con $I_n$, è una matrice quadrata $n \times n$ con tutti 1 sulla diagonale principale e 0 altrove. La matrice identità è un caso particolare di [[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice diagonale]]. Essa agisce come l'elemento neutro per la moltiplicazione, ovvero per qualsiasi matrice quadrata $A$ di dimensione $n \times n$:
 
 $$A \times I_n = I_n \times A = A$$
 

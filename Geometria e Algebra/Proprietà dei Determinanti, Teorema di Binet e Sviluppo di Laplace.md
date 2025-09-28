@@ -2,11 +2,11 @@
 
 ### 1. Richiamo della Definizione di Determinante
 
-Si inizia richiamando la definizione formale di determinante per una [[Geometria e Algebra/Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice quadrata]] $A$ di dimensione $n \times n$, con entrate indicate come $a_{ij}$. Il determinante è un valore scalare associato alla matrice, definito come la somma estesa a tutte le possibili [[Geometria e Algebra/Rango, Invertibilità delle Matrici e Permutazioni#Introduzione alle Permutazioni|permutazioni]] $\sigma$ dell'insieme di indici $\{1, 2, ..., n\}$:
+Si inizia richiamando la definizione formale di determinante per una [[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice quadrata]] $A$ di dimensione $n \times n$, con entrate indicate come $a_{ij}$. Il determinante è un valore scalare associato alla matrice, definito come la somma estesa a tutte le possibili [[03 - Rango, Invertibilità delle Matrici e Permutazioni#Introduzione alle Permutazioni|permutazioni]] $\sigma$ dell'insieme di indici $\{1, 2, ..., n\}$:
 
 $$ \det(A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^{n} a_{i, \sigma(i)} $$ 
 
-Dove $S_n$ è l'insieme di tutte le $n!$ permutazioni di $n$ elementi e $\text{sgn}(\sigma)$ è il [[Geometria e Algebra/Rango, Invertibilità delle Matrici e Permutazioni#Inversioni e Segno di una Permutazione|segno della permutazione]] $\sigma$, che vale $+1$ se la permutazione è pari e $-1$ se è dispari.
+Dove $S_n$ è l'insieme di tutte le $n!$ permutazioni di $n$ elementi e $\text{sgn}(\sigma)$ è il [[03 - Rango, Invertibilità delle Matrici e Permutazioni#Inversioni e Segno di una Permutazione|segno della permutazione]] $\sigma$, che vale $+1$ se la permutazione è pari e $-1$ se è dispari.
 
 ### 2. Proprietà Fondamentali del Determinante
 
@@ -36,18 +36,18 @@ Dalle proprietà precedenti derivano alcuni importanti corollari:
 
 ### 4. Determinante e Operazioni Elementari di Gauss-Jordan
 
-Le proprietà del determinante permettono di analizzare come esso varia in seguito all'applicazione delle tre [[Geometria e Algebra/Prodotto Matricale e Algoritmo di Gauss Jordan#Scopo del Gioco e Regole: Le Operazioni Elementari di Riga|operazioni elementari di riga]]:
+Le proprietà del determinante permettono di analizzare come esso varia in seguito all'applicazione delle tre [[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#Scopo del Gioco e Regole: Le Operazioni Elementari di Riga|operazioni elementari di riga]]:
 
 1.  **Scambio di righe ($R_i \leftrightarrow R_j$)**: Il determinante cambia segno: $\det(A') = -\det(A)$.
 2.  **Moltiplicazione di una riga per uno scalare non nullo ($R_i \to kR_i$)**: Il determinante viene moltiplicato per lo stesso scalare $k$: $\det(A') = k \cdot \det(A)$.
 3.  **Combinazione lineare ($R_i \to R_i + kR_j$)**: Il determinante rimane invariato. Questo si dimostra usando la multilinearità, che scompone il determinante in $\det(A) + k \cdot \det(A'')$, dove $A''$ è una matrice con due righe uguali (la riga $R_j$ appare sia alla posizione $i$ che alla posizione $j$), e quindi il suo determinante è nullo.
     $$ \det(A') = \det(A) $$ 
 
-Queste relazioni forniscono una strategia di calcolo: è possibile utilizzare l'[[Geometria e Algebra/Algoritmo di Eliminazione di Gauss Jordan|algoritmo di Gauss-Jordan]] per ridurre una matrice a una forma a scala (quindi [[Geometria e Algebra/Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice triangolare]]), tenendo traccia delle variazioni del determinante a ogni operazione. Poiché il determinante di una matrice triangolare è semplicemente il prodotto degli elementi sulla sua diagonale principale, si può risalire facilmente al determinante della matrice originale.
+Queste relazioni forniscono una strategia di calcolo: è possibile utilizzare l'[[Geometria e Algebra/Algoritmo di Eliminazione di Gauss Jordan|algoritmo di Gauss-Jordan]] per ridurre una matrice a una forma a scala (quindi [[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice triangolare]]), tenendo traccia delle variazioni del determinante a ogni operazione. Poiché il determinante di una matrice triangolare è semplicemente il prodotto degli elementi sulla sua diagonale principale, si può risalire facilmente al determinante della matrice originale.
 
 ### 5. Teorema di Binet
 
-Il teorema di Binet stabilisce la relazione fondamentale tra il determinante e il [[Geometria e Algebra/Prodotto Matricale e Algoritmo di Gauss Jordan#Il Prodotto Riga per Colonna|prodotto di matrici]]. Date due matrici quadrate $A$ e $B$ della stessa dimensione, il determinante del loro prodotto è uguale al prodotto dei loro determinanti.
+Il teorema di Binet stabilisce la relazione fondamentale tra il determinante e il [[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#Il Prodotto Riga per Colonna|prodotto di matrici]]. Date due matrici quadrate $A$ e $B$ della stessa dimensione, il determinante del loro prodotto è uguale al prodotto dei loro determinanti.
 
 $$ \det(A \cdot B) = \det(A) \cdot \det(B) $$ 
 
@@ -56,7 +56,7 @@ La dimostrazione di questo teorema si basa sulla scomposizione delle righe della
 ### 6. Relazione tra Determinante e Invertibilità
 
 Il teorema di Binet è lo strumento chiave per stabilire il più importante criterio di invertibilità per le matrici quadrate.
-Se una matrice $A$ è [[Geometria e Algebra/Rango, Invertibilità delle Matrici e Permutazioni|invertibile]], esiste la sua [[Geometria e Algebra/Rango, Invertibilità delle Matrici e Permutazioni#Algoritmo per il Calcolo della Matrice Inversa|inversa $A^{-1}$]] tale che $A \cdot A^{-1} = I$, dove $I$ è la [[Geometria e Algebra/Prodotto Matricale e Algoritmo di Gauss Jordan#La Matrice Identità come Elemento Neutro|matrice identità]].
+Se una matrice $A$ è [[03 - Rango, Invertibilità delle Matrici e Permutazioni|invertibile]], esiste la sua [[03 - Rango, Invertibilità delle Matrici e Permutazioni#Algoritmo per il Calcolo della Matrice Inversa|inversa $A^{-1}$]] tale che $A \cdot A^{-1} = I$, dove $I$ è la [[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#La Matrice Identità come Elemento Neutro|matrice identità]].
 
 Applicando il teorema di Binet, si ha:
 $$ \det(A \cdot A^{-1}) = \det(A) \cdot \det(A^{-1}) $$ 
@@ -70,8 +70,8 @@ Da questa equazione si deducono due risultati cruciali:
 Questo porta al seguente corollario che unifica i concetti di rango, determinante e invertibilità:
 
 **Teorema di equivalenza:** Per una matrice quadrata $A$ di ordine $n$, le seguenti tre affermazioni sono equivalenti:
-1.  $A$ è [[Geometria e Algebra/Rango, Invertibilità delle Matrici e Permutazioni|invertibile]].
-2.  Il [[Geometria e Algebra/Rango, Invertibilità delle Matrici e Permutazioni#Il Rango di una Matrice|rango di $A$]] è massimale, ovvero $Rk(A) = n$.
+1.  $A$ è [[03 - Rango, Invertibilità delle Matrici e Permutazioni|invertibile]].
+2.  Il [[03 - Rango, Invertibilità delle Matrici e Permutazioni#Il Rango di una Matrice|rango di $A$]] è massimale, ovvero $Rk(A) = n$.
 3.  Il determinante di $A$ è non nullo, ovvero $\det(A) \neq 0$.
 
 ## Teorema di Laplace per il Calcolo del Determinante
@@ -81,7 +81,7 @@ Mentre la definizione formale è computazionalmente impraticabile per matrici pi
 ### 1. Sottomatrici, Minori e Cofattori
 
 Data una matrice quadrata $A$ di dimensione $n \times n$:
-- Si definisce **[[Geometria e Algebra/Prodotto Matricale e Algoritmo di Gauss Jordan#Sottomatrici|sottomatrice]]** $A_{ij}$ la matrice di dimensione $(n-1) \times (n-1)$ ottenuta da $A$ eliminando l'i-esima riga e la j-esima colonna.
+- Si definisce **[[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#Sottomatrici|sottomatrice]]** $A_{ij}$ la matrice di dimensione $(n-1) \times (n-1)$ ottenuta da $A$ eliminando l'i-esima riga e la j-esima colonna.
 - Si definisce **minore** di $A$ relativo agli indici $(i, j)$, denotato con $m_{ij}(A)$ o $|A_{ij}|$, il determinante della sottomatrice $A_{ij}$.
 - Si definisce **cofattore** (o complemento algebrico) dell'elemento $a_{ij}$, denotato con $a_{ij}^*$, il minore con il suo segno di posizione:
   $$ a_{ij}^* = (-1)^{i+j} m_{ij} = (-1)^{i+j} |A_{ij}| $$

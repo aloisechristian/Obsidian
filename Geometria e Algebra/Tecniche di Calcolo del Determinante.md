@@ -1,6 +1,6 @@
 # Tecniche di Calcolo del Determinante
 
-Il determinante è un valore scalare associato a ogni [[Geometria e Algebra/Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice quadrata]] che ne racchiude proprietà fondamentali, come l'[[Geometria e Algebra/Rango, Invertibilità delle Matrici e Permutazioni|invertibilità]]. Esistono diversi metodi per calcolarlo, ma è sempre buona norma verificare prima la presenza di casi particolari che possono semplificare enormemente i calcoli.
+Il determinante è un valore scalare associato a ogni [[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice quadrata]] che ne racchiude proprietà fondamentali, come l'[[03 - Rango, Invertibilità delle Matrici e Permutazioni|invertibilità]]. Esistono diversi metodi per calcolarlo, ma è sempre buona norma verificare prima la presenza di casi particolari che possono semplificare enormemente i calcoli.
 
 ---
 
@@ -9,11 +9,11 @@ Il determinante è un valore scalare associato a ogni [[Geometria e Algebra/Intr
 Prima di applicare metodi generali, è utile controllare se la matrice presenta una delle seguenti caratteristiche.
 
 ### Matrici Triangolari e Diagonali
-Il calcolo del determinante è immediato per una [[Geometria e Algebra/Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice triangolare]] (superiore o inferiore) o per una matrice diagonale. In questi casi, il determinante è semplicemente il **prodotto degli elementi sulla diagonale principale**.
+Il calcolo del determinante è immediato per una [[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#Tipologie di Matrici Speciali|matrice triangolare]] (superiore o inferiore) o per una matrice diagonale. In questi casi, il determinante è semplicemente il **prodotto degli elementi sulla diagonale principale**.
 
 Data una matrice $A$ triangolare o diagonale di ordine $n$:
 $$ \det(A) = a_{11} \cdot a_{22} \cdot \dots \cdot a_{nn} = \prod_{i=1}^{n} a_{ii} $$
-Questo include la [[Geometria e Algebra/Prodotto Matricale e Algoritmo di Gauss Jordan#La Matrice Identità come Elemento Neutro|matrice identità]], il cui determinante è sempre 1.
+Questo include la [[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#La Matrice Identità come Elemento Neutro|matrice identità]], il cui determinante è sempre 1.
 
 ### Righe o Colonne con Molti Zeri
 Se una riga o una colonna contiene molti zeri, il metodo più rapido è quasi sempre lo [[#2. Sviluppo di Laplace (Metodo dei Cofattori)|Sviluppo di Laplace]], scegliendo di espandere lungo quella riga o colonna. Molti termini della sommatoria si annulleranno, riducendo drasticamente il numero di calcoli necessari.
@@ -46,7 +46,7 @@ Il [[Geometria e Algebra/Proprietà dei Determinanti, Teorema di Binet e Svilupp
 
 ## 3. Metodo di Riduzione a Scala (Eliminazione Gaussiana)
 
-Questa tecnica sfrutta le proprietà del determinante in relazione alle [[Geometria e Algebra/Prodotto Matricale e Algoritmo di Gauss Jordan#Scopo del Gioco e Regole: Le Operazioni Elementari di Riga|operazioni elementari di riga]]. L'obiettivo è trasformare la matrice in una [[#Matrici Triangolari e Diagonali|matrice triangolare]], il cui determinante è il prodotto degli elementi diagonali, e risalire al determinante originale.
+Questa tecnica sfrutta le proprietà del determinante in relazione alle [[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#Scopo del Gioco e Regole: Le Operazioni Elementari di Riga|operazioni elementari di riga]]. L'obiettivo è trasformare la matrice in una [[#Matrici Triangolari e Diagonali|matrice triangolare]], il cui determinante è il prodotto degli elementi diagonali, e risalire al determinante originale.
 
 La procedura è la seguente:
 1.  Applicare operazioni elementari di riga per ridurre la matrice $A$ a una forma a scala $A'$.

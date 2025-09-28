@@ -1,8 +1,8 @@
 ## Introduzione e Obiettivi della Lezione
 
-Nelle lezioni precedenti, la necessità di risolvere sistemi di equazioni lineari in modo efficiente ha motivato l'introduzione delle [[Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#^1f6aea|matrici]] e delle relative operazioni: trasposizione, somma, prodotto per uno scalare e prodotto righe per colonna. Mentre per le prime operazioni è semplice identificare un'inversa, il concetto di invertibilità rispetto al prodotto righe per colonna è una questione più complessa e fondamentale.
+Nelle lezioni precedenti, la necessità di risolvere sistemi di equazioni lineari in modo efficiente ha motivato l'introduzione delle [[01 - Introduzione all'Algebra Lineare, Matrici e Operazioni Fondamentali#^1f6aea|matrici]] e delle relative operazioni: trasposizione, somma, prodotto per uno scalare e prodotto righe per colonna. Mentre per le prime operazioni è semplice identificare un'inversa, il concetto di invertibilità rispetto al prodotto righe per colonna è una questione più complessa e fondamentale.
 
-L'obiettivo di questa lezione è stabilire un criterio rigoroso per determinare se una matrice quadrata $A$ sia invertibile e, in caso affermativo, calcolarne la matrice inversa $A^{-1}$. Lo strumento introdotto a tale scopo è stato l'[[Prodotto Matricale e Algoritmo di Gauss Jordan#L'Algoritmo di Eliminazione di Gauss-Jordan|algoritmo di eliminazione di Gauss-Jordan]], che permette di trasformare una qualsiasi matrice nella sua forma a scala ridotta (reduced row echelon form).
+L'obiettivo di questa lezione è stabilire un criterio rigoroso per determinare se una matrice quadrata $A$ sia invertibile e, in caso affermativo, calcolarne la matrice inversa $A^{-1}$. Lo strumento introdotto a tale scopo è stato l'[[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#L'Algoritmo di Eliminazione di Gauss-Jordan|algoritmo di eliminazione di Gauss-Jordan]], che permette di trasformare una qualsiasi matrice nella sua forma a scala ridotta (reduced row echelon form).
 
 ---
 

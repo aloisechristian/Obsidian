@@ -12,7 +12,7 @@ Un **algoritmo** è una sequenza finita e ordinata di passi elementari che porta
 
 Questi algoritmi applicano ripetutamente un insieme di operazioni fino al raggiungimento di una condizione di terminazione.
 
-- **[[Geometria e Algebra/Prodotto Matricale e Algoritmo di Gauss Jordan#Il Metodo di Eliminazione di Gauss-Jordan|Algoritmo di Eliminazione di Gauss-Jordan]]:** Una procedura sistematica per trasformare una qualsiasi matrice nella sua forma a scala ridotta tramite operazioni elementari di riga. È il metodo fondamentale utilizzato dai calcolatori per risolvere i sistemi di equazioni lineari e calcolare la matrice inversa.
+- **[[02 - Prodotto Matricale e Algoritmo di Gauss Jordan#Il Metodo di Eliminazione di Gauss-Jordan|Algoritmo di Eliminazione di Gauss-Jordan]]:** Una procedura sistematica per trasformare una qualsiasi matrice nella sua forma a scala ridotta tramite operazioni elementari di riga. È il metodo fondamentale utilizzato dai calcolatori per risolvere i sistemi di equazioni lineari e calcolare la matrice inversa.
 
 - **[[Fondamenti di Informatica/Sistemi di Numerazione Posizionale e Aritmetica Binaria#Conversione da Decimale a Binario|Conversione da Decimale a Binario]]:** Un algoritmo che utilizza divisioni successive per 2 (per la parte intera) e moltiplicazioni successive per 2 (per la parte frazionaria) per convertire un numero dalla base 10 alla base 2. La logica si può generalizzare per la conversione in qualsiasi base B.
 
