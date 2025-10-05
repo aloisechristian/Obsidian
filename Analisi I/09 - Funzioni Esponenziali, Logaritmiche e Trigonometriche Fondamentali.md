@@ -168,7 +168,7 @@ Considerando un periodo, la curva si trova sotto la retta nell'intervallo che va
   $$\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
   Questo rappresenta un unico intervallo che si ripete periodicamente.
 
-``` plotly  
+```plotly  
 # --- Definizione delle variabili per rendere il grafico dinamico ---  
 variables:  
 a: 0.5 # Puoi cambiare questo valore per vedere come cambia il grafico  
