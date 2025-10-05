@@ -159,14 +159,18 @@ Osservando un periodo, si nota che questo avviene tra le due soluzioni principal
 
 **Caso 2: $\sin(x) < a$**
 Questa disequazione è soddisfatta negli intervalli in cui il grafico della funzione seno si trova **al di sotto** della retta $y=a$.
-Considerando un periodo, la curva si trova sotto la retta nell'intervallo che va dalla seconda soluzione, $x_1$, fino alla prima soluzione del periodo successivo, ovvero $x_0 + 2\pi$.
+Facendo riferimento al grafico, la curva si trova sopra la retta `y=a` nell'intervallo tra le intersezioni `A` e `B`. Di conseguenza, sarà sotto la retta nell'intervallo che precede `A` e che segue `B`.
 
-- Soluzione nell'intervallo di riferimento: $x_1 < x < x_0 + 2\pi$.
-- Soluzione generale, tenendo conto della periodicità:
-  $$x_1 + 2k\pi < x < x_0 + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
-  Sostituendo le espressioni di $x_0$ e $x_1$:
-  $$\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
-  Questo rappresenta un unico intervallo che si ripete periodicamente.
+Per descrivere questo intervallo in modo univoco, consideriamo il tratto di curva che va dal punto `C` al punto `A`.
+- Il punto `A` corrisponde alla soluzione principale: $x_A = \arcsin(a)$.
+- Il punto `C`, come si vede dal grafico, è simmetrico al punto `A` rispetto a $-\pi/2$, e la sua ascissa è $x_C = -\pi - \arcsin(a)$.
+
+L'intervallo di base in cui la funzione è minore di $a$ è quindi $(x_C, x_A)$.
+
+- Soluzione nell'intervallo di riferimento: $-\pi - \arcsin(a) < x < \arcsin(a)$.
+- Soluzione generale, tenendo conto della periodicità $2\pi$:
+  $$-\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2k\pi, \quad k \in \mathbb{Z}$$
+  Questa formulazione descrive in modo chiaro e diretto l'unione di tutti gli intervalli in cui la condizione è verificata.
 
 ```plotly
 data:
