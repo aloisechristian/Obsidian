@@ -168,8 +168,56 @@ Considerando un periodo, la curva si trova sotto la retta nell'intervallo che va
   $$\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
   Questo rappresenta un unico intervallo che si ripete periodicamente.
 
-```plotly
-data:
-	- x: [0,1,2]
-	  y: [0,1,0]
+``` plotly  
+# --- Definizione delle variabili per rendere il grafico dinamico ---  
+variables:  
+a: 0.5 # Puoi cambiare questo valore per vedere come cambia il grafico  
+x0: "asin(a)"  
+x1: "PI - asin(a)"  
+  
+# --- Traccia 1: La funzione seno ---  
+traces:  
+- type: "scatter"  
+# Genera 200 punti per l'asse x da -2*pi a 2*pi per un grafico fluido  
+x: "[[[-2*PI, 2*PI, 200]]]"  
+# Calcola il seno per ogni punto di x  
+y: "evaluate(x, sin(x))"  
+name: "y = sin(x)"  
+mode: "lines"  
+line:  
+color: "rgb(0,100,200)"  
+width: 3  
+  
+# --- Traccia 2: La retta orizzontale y = a ---  
+- type: "scatter"  
+x: [-2*PI, 2*PI]  
+y: [a, a] # y è costante e uguale alla nostra variabile 'a'  
+name: "y = a"  
+mode: "lines"  
+line:  
+color: "rgb(205, 12, 24)"  
+width: 2  
+dash: "dash"  
+  
+# --- Traccia 3: I punti di intersezione ---  
+- type: "scatter"  
+x: [x0, x1] # Usiamo le variabili definite sopra  
+y: [a, a]  
+name: "Intersezioni"  
+mode: "markers"  
+marker:  
+color: "rgb(205, 12, 24)"  
+size: 10  
+symbol: "x"  
+  
+# --- Configurazione del Layout del grafico ---  
+layout:  
+title: "Risoluzione Grafica di sin(x) = a"  
+xaxis:  
+title: "x (radianti)"  
+dtick: "PI/2" # Aggiunge una tacca ogni pi/2  
+tickformat: ".2f"  
+yaxis:  
+title: "y"  
+range: [-1.5, 1.5] # Imposta i limiti dell'asse y per una migliore visualizzazione  
 ```
