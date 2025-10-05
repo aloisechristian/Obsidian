@@ -125,3 +125,45 @@ Per risolvere un'equazione del tipo $\sin(x) = a$:
 3.  Le soluzioni generali sono $x = \pi/6 + 2k\pi$ e $x = 5\pi/6 + 2k\pi$, con $k \in \mathbb{Z}$.
 
 La risoluzione di disequazioni come $\sin(x) > a$ o $\sin(x) < a$ si basa sull'individuazione di questi due angoli fondamentali e sull'analisi del grafico della funzione seno o della circonferenza goniometrica per determinare gli intervalli che soddisfano la condizione, tenendo poi conto della periodicità.
+### Risoluzione di Equazioni e Disequazioni con il Seno
+
+#### Risoluzione dell'Equazione $\sin(x) = a$
+Per risolvere un'equazione del tipo $\sin(x) = a$:
+- Se $a < -1$ o $a > 1$, non ci sono soluzioni, poiché il codominio della funzione seno è $[-1, 1]$.
+- Se $a \in [-1, 1]$, si procede come segue:
+
+1.  **Trovare la soluzione principale**: Si utilizza la funzione arcoseno per trovare l'unica soluzione nell'intervallo $[-\pi/2, \pi/2]$:
+    $$x_0 = \arcsin(a)$$
+2.  **Trovare la seconda soluzione**: Sulla circonferenza goniometrica, un'altra famiglia di soluzioni si trova nel secondo quadrante (se $x_0>0$) o terzo (se $x_0<0$). Questa è data da:
+    $$x_1 = \pi - x_0 = \pi - \arcsin(a)$$
+3.  **Generalizzare con la periodicità**: Le soluzioni complete dell'equazione si ottengono aggiungendo i multipli interi del periodo $2\pi$ a entrambe le soluzioni trovate:
+    $$\begin{cases} x = x_0 + 2k\pi \\ x = \pi - x_0 + 2k\pi \end{cases} \quad k \in \mathbb{Z}$$
+
+**Esempio:** Risolvere $\sin(x) = 1/2$.
+1.  $x_0 = \arcsin(1/2) = \pi/6$.
+2.  $x_1 = \pi - \pi/6 = 5\pi/6$.
+3.  Le soluzioni generali sono $x = \pi/6 + 2k\pi$ e $x = 5\pi/6 + 2k\pi$, con $k \in \mathbb{Z}$.
+
+#### Interpretazione Grafica e Risoluzione delle Disequazioni
+Per risolvere disequazioni come $\sin(x) > a$ o $\sin(x) < a$, l'approccio più intuitivo è quello grafico. Si analizza il grafico della funzione $y=\sin(x)$ e lo si interseca con la retta orizzontale $y=a$. Le soluzioni dell'equazione associata, $x_0$ e $x_1$, sono le ascisse dei punti di intersezione.
+
+**Caso 1: $\sin(x) > a$**
+Risolvere questa disequazione equivale a trovare gli intervalli di $x$ per cui il grafico della funzione seno si trova **al di sopra** della retta $y=a$.
+Osservando un periodo, si nota che questo avviene tra le due soluzioni principali $x_0$ e $x_1$.
+
+- Soluzione nell'intervallo di riferimento: $x_0 < x < x_1$.
+- Soluzione generale, tenendo conto della periodicità $2\pi$:
+  $$x_0 + 2k\pi < x < x_1 + 2k\pi, \quad k \in \mathbb{Z}$$
+  Sostituendo le espressioni di $x_0$ e $x_1$:
+  $$\arcsin(a) + 2k\pi < x < \pi - \arcsin(a) + 2k\pi, \quad k \in \mathbb{Z}$$
+
+**Caso 2: $\sin(x) < a$**
+Questa disequazione è soddisfatta negli intervalli in cui il grafico della funzione seno si trova **al di sotto** della retta $y=a$.
+Considerando un periodo, la curva si trova sotto la retta nell'intervallo che va dalla seconda soluzione, $x_1$, fino alla prima soluzione del periodo successivo, ovvero $x_0 + 2\pi$.
+
+- Soluzione nell'intervallo di riferimento: $x_1 < x < x_0 + 2\pi$.
+- Soluzione generale, tenendo conto della periodicità:
+  $$x_1 + 2k\pi < x < x_0 + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
+  Sostituendo le espressioni di $x_0$ e $x_1$:
+  $$\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
+  Questo rappresenta un unico intervallo che si ripete periodicamente.
