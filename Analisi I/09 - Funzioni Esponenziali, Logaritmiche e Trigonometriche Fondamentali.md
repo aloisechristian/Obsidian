@@ -167,3 +167,9 @@ Considerando un periodo, la curva si trova sotto la retta nell'intervallo che va
   Sostituendo le espressioni di $x_0$ e $x_1$:
   $$\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
   Questo rappresenta un unico intervallo che si ripete periodicamente.
+
+```plotly
+data:
+	- x: [0,1,2]
+	  y: [0,1,0]
+```
