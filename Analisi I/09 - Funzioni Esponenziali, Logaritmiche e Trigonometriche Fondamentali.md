@@ -168,45 +168,4 @@ Considerando un periodo, la curva si trova sotto la retta nell'intervallo che va
   $$\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
   Questo rappresenta un unico intervallo che si ripete periodicamente.
 
-```plotly  
-variables:  
-a: 0.5  
-x0: "asin(a)"  
-x1: "PI - asin(a)"  
-traces:  
-- type: scatter  
-x: "[[[-2*PI, 2*PI, 200]]]"  
-y: "evaluate(x, sin(x))"  
-name: "y = sin(x)"  
-mode: lines  
-line:  
-color: "rgb(0,100,200)"  
-width: 3  
-- type: scatter  
-x: [-2*PI, 2*PI]  
-y: [a, a]  
-name: "y = a"  
-mode: lines  
-line:  
-color: "rgb(205, 12, 24)"  
-width: 2  
-dash: dash  
-- type: scatter  
-x: [x0, x1]  
-y: [a, a]  
-name: Intersezioni  
-mode: markers  
-marker:  
-color: "rgb(205, 12, 24)"  
-size: 10  
-symbol: x  
-layout:  
-title: "Risoluzione Grafica di sin(x) = a"  
-xaxis:  
-title: "x (radianti)"  
-dtick: "PI/2"  
-tickformat: ".2f"  
-yaxis:  
-title: "y"  
-range: [-1.5, 1.5]  
-```
+
