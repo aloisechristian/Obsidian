@@ -176,7 +176,7 @@ x1: "PI - asin(a)"
 traces:  
 - type: scatter  
 x: "[[[-2*PI, 2*PI, 200]]]"  
-y: "sin(x)"  
+y: "evaluate(x, sin(x))"  
 name: "y = sin(x)"  
 mode: lines  
 line:  
