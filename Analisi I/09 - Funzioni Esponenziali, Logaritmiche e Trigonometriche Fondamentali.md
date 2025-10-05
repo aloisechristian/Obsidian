@@ -168,4 +168,54 @@ Considerando un periodo, la curva si trova sotto la retta nell'intervallo che va
   $$\pi - \arcsin(a) + 2k\pi < x < \arcsin(a) + 2(k+1)\pi, \quad k \in \mathbb{Z}$$
   Questo rappresenta un unico intervallo che si ripete periodicamente.
 
+```plotly
+data:
+  - line: {color: '#1f77b4', width: 2}
+    mode: lines
+    name: y = sin(x)
+    type: scatter
+    x: [-5.0, -4.9, -4.8, -4.7, -4.6, -4.5, -4.4, -4.3, -4.2, -4.1, -4.0, -3.9, -3.8, -3.7, -3.6, -3.5, -3.4, -3.3, -3.2, -3.1, -3.0, -2.9, -2.8, -2.7, -2.6, -2.5, -2.4, -2.3, -2.2, -2.1, -2.0, -1.9, -1.8, -1.7, -1.6, -1.5, -1.4, -1.3, -1.2, -1.1, -1.0, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0]
+    y: [0.9589, 0.9825, 0.9962, 0.9999, 0.9939, 0.9775, 0.9516, 0.9162, 0.8716, 0.8183, 0.7568, 0.6878, 0.6119, 0.5298, 0.4425, 0.3508, 0.2555, 0.1577, 0.0584, -0.0416, -0.1411, -0.2392, -0.3350, -0.4274, -0.5155, -0.5985, -0.6755, -0.7457, -0.8085, -0.8632, -0.9093, -0.9463, -0.9738, -0.9917, -0.9996, -0.9975, -0.9854, -0.9636, -0.9320, -0.8912, -0.8415, -0.7833, -0.7174, -0.6442, -0.5646, -0.4794, -0.3894, -0.2955, -0.1987, -0.0998, 0.0000, 0.0998, 0.1987, 0.2955, 0.3894, 0.4794, 0.5646, 0.6442, 0.7174, 0.7833, 0.8415, 0.8912, 0.9320, 0.9636, 0.9854, 0.9975, 0.9996, 0.9917, 0.9738, 0.9463, 0.9093, 0.8632, 0.8085, 0.7457, 0.6755, 0.5985, 0.5155, 0.4274, 0.3350, 0.2392, 0.1411, 0.0416, -0.0584, -0.1577, -0.2555, -0.3508, -0.4425, -0.5298, -0.6119, -0.6878, -0.7568, -0.8183, -0.8716, -0.9162, -0.9516, -0.9775, -0.9939, -0.9999, -0.9962, -0.9825, -0.9589]
+  - line: {color: '#ff7f0e', width: 2}
+    mode: lines
+    name: y = a (a=0.5)
+    type: scatter
+    x: [-5, 5]
+    y: [0.5, 0.5]
+  - marker: {color: 'red', size: 10}
+    mode: markers
+    name: Intersezioni
+    type: scatter
+    x: [0.5236, 2.618, -3.665]
+    y: [0.5, 0.5, 0.5]
 
+layout:
+  title: 'Grafico sin(x) e intersezioni con a=0.5'
+  xaxis: {range: [-5, 5], title: 'x', zeroline: true}
+  yaxis: {range: [-1.7, 1.7], title: 'y', zeroline: true}
+  shapes:
+    # Linee di riferimento verticali per pi e -pi
+    - {type: line, x0: -3.1416, y0: -1.7, x1: -3.1416, y1: 1.7, line: {color: '#2ca02c', width: 2, dash: 'dot'}}
+    - {type: line, x0: 3.1416, y0: -1.7, x1: 3.1416, y1: 1.7, line: {color: '#2ca02c', width: 2, dash: 'dot'}}
+    # Proiezioni verticali delle intersezioni
+    - {type: line, x0: 0.5236, y0: 0, x1: 0.5236, y1: 0.5, line: {color: 'gray', width: 1, dash: 'dash'}}
+    - {type: line, x0: 2.618, y0: 0, x1: 2.618, y1: 0.5, line: {color: 'gray', width: 1, dash: 'dash'}}
+    - {type: line, x0: -3.665, y0: 0, x1: -3.665, y1: 0.5, line: {color: 'gray', width: 1, dash: 'dash'}}
+    # Evidenziazione distanze sull'asse x
+    - {type: line, x0: 0, y0: -0.15, x1: 0.5236, y1: -0.15, line: {color: '#9467bd', width: 4}}
+    - {type: line, x0: 2.618, y0: -0.15, x1: 3.1416, y1: -0.15, line: {color: '#8c564b', width: 4}}
+    - {type: line, x0: -3.1416, y0: -0.15, x1: -3.665, y1: -0.15, line: {color: '#d62728', width: 4}}
+
+  annotations:
+    # Etichette dei punti di intersezione (RIPOSIZIONATE)
+    - {x: 0.5236, y: 0.5, text: 'A = arcsin(a)', showarrow: true, arrowhead: 1, ax: 0, ay: -40}
+    - {x: 2.618, y: 0.5, text: 'B = pi - arcsin(a)', showarrow: true, arrowhead: 1, ax: 0, ay: -60}
+    - {x: -3.665, y: 0.5, text: 'C = -pi - arcsin(a)', showarrow: true, arrowhead: 1, ax: 0, ay: -40}
+    # Etichette per pi e -pi
+    - {x: -3.1416, y: 1.5, text: '-pi', font: {color: '#2ca02c', size: 14}, showarrow: false}
+    - {x: 3.1416, y: 1.5, text: 'pi', font: {color: '#2ca02c', size: 14}, showarrow: false}
+    # Etichette per le distanze
+    - {x: 0.26, y: -0.35, text: 'dist=arcsin(a)', font: {color: '#9467bd'}, showarrow: false}
+    - {x: 2.88, y: -0.35, text: 'dist=arcsin(a)', font: {color: '#8c564b'}, showarrow: false}
+    - {x: -3.4, y: -0.35, text: 'dist=arcsin(a)', font: {color: '#d62728'}, showarrow: false}
+```
