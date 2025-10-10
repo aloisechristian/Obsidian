@@ -109,23 +109,35 @@ Le sequenze di escape permettono di inserire caratteri speciali all'interno di u
 - `\nnn`: Carattere ASCII con valore ottale `nnn`.  
 - `\xhh`: Carattere ASCII con valore esadecimale `hh`.  
   
-### Input: La Funzione `scanf`  
-La funzione `scanf` è duale a `printf` e serve per leggere dati formattati dallo **standard input** (tipicamente la tastiera). Anch'essa utilizza specificatori di formato per interpretare correttamente i dati inseriti dall'utente.  
-  
-La sintassi richiede una stringa di formato e l'indirizzo di memoria della variabile in cui salvare il dato letto. Per ottenere l'indirizzo di una variabile si utilizza l'operatore **address-of** (`&`).  
-  
-**Esempio:**  
-```c  
-int numero;  
-printf("Inserisci un numero: ");  
-scanf("%d", &numero);  
-printf("Numero inserito: %d\n", numero);  
-```  
-1. `int numero;` dichiara una variabile intera.  
-2. `scanf("%d", &numero);` attende che l'utente digiti un numero intero e prema Invio.  
-3. Il valore inserito viene interpretato come intero (`%d`) e memorizzato all'indirizzo della variabile `numero` (`&numero`).  
-  
-Durante l'esecuzione di `scanf`, il programma si interrompe temporaneamente, in attesa dell'input dell'utente. L'operazione di lettura termina quando viene premuto il tasto Invio.  
+### Input: La Funzione `scanf`
+
+La funzione `scanf` è duale a `printf` e serve per leggere dati formattati dallo **standard input** (tipicamente la tastiera). Anch'essa utilizza specificatori di formato per interpretare correttamente i dati inseriti dall'utente.
+
+La sintassi richiede una stringa di formato e l'indirizzo di memoria della variabile in cui salvare il dato letto.
+
+**Esempio:**
+```c
+int numero;
+printf("Inserisci un numero: ");
+scanf("%d", &numero); // Corretto: si passa l'indirizzo di 'numero'
+printf("Numero inserito: %d\n", numero);
+```
+
+#### Perché è Obbligatorio l'Indirizzo di Memoria (`&`)?
+
+Il linguaggio C utilizza un meccanismo di **passaggio per valore** per gli argomenti delle funzioni. Questo significa che quando una funzione viene chiamata, essa riceve solo una **copia** del valore delle variabili che le vengono passate, non le variabili originali.
+
+Lo scopo di `scanf` è **modificare il valore** di una variabile esterna alla funzione. Se le passassimo solo l'identificatore (`numero`), `scanf` lavorerebbe su una sua copia locale e la variabile originale nel `main` rimarrebbe invariata.
+
+Utilizzando l'operatore **address-of** (`&`), non passiamo il valore, ma l'**indirizzo** (la posizione in memoria) della variabile. In questo modo, `scanf` sa esattamente dove andare a scrivere il dato letto, modificando così la variabile originale.
+
+#### Che Tipo di Errore Causa l'Omissione dell'operatore `&`?
+
+Omettere l'operatore `&` (es. `scanf("%d", numero);`) è un errore che si manifesta in due momenti:
+
+1.  **A Tempo di Compilazione (Warning)**: I compilatori moderni sono in grado di riconoscere questo errore comune. Non bloccano la compilazione, ma emettono un **Warning (Avviso)**, segnalando che lo specificatore di formato (`%d`) si aspetta un argomento di tipo puntatore a intero (`int *`), ma sta ricevendo un intero (`int`).
+
+2.  **A Tempo di Esecuzione (Run-Time Error)**: Se l'avviso viene ignorato, il programma andrà incontro a un **Errore di Esecuzione**. Il valore contenuto nella variabile `numero` (che potrebbe essere zero o un valore casuale) verrà interpretato da `scanf` come un indirizzo di memoria. Il programma tenterà quindi di scrivere in una locazione di memoria arbitraria, causando un **comportamento indefinito** (*Undefined Behavior*). L'esito più comune è l'interruzione anomala del programma con un errore critico, noto come **Segmentation Fault**.
   
 ## Dichiarazioni e Istruzioni Elementari  
   
