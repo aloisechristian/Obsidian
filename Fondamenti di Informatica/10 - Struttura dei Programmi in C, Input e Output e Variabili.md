@@ -364,7 +364,7 @@ float risultato = (float)a / b; // risultato = 2.5
 ## Esempio Pratico: Scambio di Variabili (Swap)  
 Un problema classico per mettere in pratica questi concetti è lo scambio del valore di due variabili.  
 ```c  
-#include  
+#include <stdio.h> 
   
 int main() {  
 	int x = 10;  
