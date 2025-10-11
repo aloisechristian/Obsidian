@@ -8,7 +8,7 @@ Il punto di partenza per la definizione di uno spazio vettoriale è la nozione d
 
 1.  **Proprietà Associativa**: $\forall u, v, w \in V$, vale la relazione $(u+v)+w = u+(v+w)$. Questa regola garantisce che la somma sia affidabile: possiamo scrivere `u+v+w` senza ambiguità.
 2.  **Esistenza dell'Elemento Neutro**: $\exists 0 \in V$ tale che $\forall v \in V$, si ha $0+v = v+0 = v$. L'elemento neutro fornisce un' "origine", un punto di riferimento fondamentale per lo spazio.
-3.  **Esistenza dell'Opposto**: $\forall v \in V, \exists v' \in V$ (chiamato opposto di $v$ e denotato con $-v$) tale che $v+v' = v'+v = 0$. Questa proprietà rende la somma **reversibile** e ci permette di definire la sottrazione (`u - v` come `u + (-v)`).
+3.  **Esistenza dell'Opposto**: $\forall v \in V, \exists v' \in V$ (chiamato opposto di $v$ e denotato con $-v$) tale che $v+v' = v'+v = 0$. Questa proprietà rende la somma **reversibile** e ci permette di definire la sottrazione ($u - v\ come\ u + (-v)$).
 4.  **Proprietà Commutativa**: $\forall v, w \in V$, vale la relazione $v+w = w+v$. Geometricamente, significa che il percorso per arrivare da un punto all'altro è indipendente dall'ordine delle operazioni.
 
 Un insieme che soddisfa solo le prime tre proprietà è detto **gruppo**.
