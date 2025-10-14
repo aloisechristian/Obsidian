@@ -29,14 +29,44 @@ Per superare tale ambiguità, si introduce il concetto di **indipendenza lineare
 $$ \sum_{i=1}^{n} \lambda_i v_i = \mathbf{0} \implies \lambda_i = 0 \quad \forall i = 1, \dots, n $$
 Un insieme che non è linearmente indipendente è detto **linearmente dipendente**.
 
-### Esempi di Verifica
-- **Esempio 1 (Indipendente):** L'insieme $\{(1, 0), (0, 1)\}$ in $\mathbb{R}^2$ è linearmente indipendente. Infatti, l'equazione $\lambda_1(1, 0) + \lambda_2(0, 1) = (0, 0)$ porta al vettore $(\lambda_1, \lambda_2) = (0, 0)$, che implica necessariamente $\lambda_1 = 0$ e $\lambda_2 = 0$.
+> [!info] Interpretazione Intuitiva: L'Impossibilità di "Costruire" Vettori
+> Il modo più diretto per visualizzare l'indipendenza lineare è chiedersi: "Posso costruire uno dei vettori dell'insieme usando una combinazione degli altri?"
+> 
+> **Caso Indipendente: Costruzione Impossibile**
+> Consideriamo l'insieme linearmente indipendente formato dalla base canonica di $\mathbb{R}^3$:
+> - $v_1 = (1, 0, 0)$
+> - $v_2 = (0, 1, 0)$
+> - $v_3 = (0, 0, 1)$
+> 
+> Proviamo a costruire $v_1$ usando gli altri due. Per farlo, dovremmo trovare due scalari $\lambda_2$ e $\lambda_3$ tali che:
+> $$ v_1 = \lambda_2 v_2 + \lambda_3 v_3 $$
+> Sostituendo i vettori, otteniamo:
+> $$ (1, 0, 0) = \lambda_2 (0, 1, 0) + \lambda_3 (0, 0, 1) = (0, \lambda_2, \lambda_3) $$
+> Questa equazione è chiaramente impossibile. Il problema è nella **prima componente**: per ottenere l' `1` di $v_1$, abbiamo a disposizione solo le prime componenti di $v_2$ e $v_3$. Poiché entrambe sono `0`, qualsiasi loro combinazione lineare avrà sempre `0` come prima componente.
+> $$ \lambda_2 \cdot 0 + \lambda_3 \cdot 0 = 0 \neq 1 $$
+> **Non abbiamo modo di "influenzare" la prima componente usando $v_2$ e $v_3$**. Lo stesso vale per ogni altro vettore dell'insieme. Ciascuno controlla una componente che gli altri non possono toccare. Sono quindi insostituibili e **linearmente indipendenti**.
+> 
+> **Caso Dipendente: Costruzione Possibile**
+> Ora, aggiungiamo il vettore $v_4 = (1, 1, 0)$. L'insieme $\{v_1, v_2, v_3, v_4\}$ è dipendente. Perché? Perché ora la costruzione è possibile. Proviamo a costruire $v_4$ usando gli altri:
+> $$ v_4 = \lambda_1 v_1 + \lambda_2 v_2 + \lambda_3 v_3 $$
+> $$ (1, 1, 0) = \lambda_1(1, 0, 0) + \lambda_2(0, 1, 0) + \lambda_3(0, 0, 1) = (\lambda_1, \lambda_2, \lambda_3) $$
+> Questa equazione ha una soluzione immediata: $\lambda_1 = 1$, $\lambda_2 = 1$, $\lambda_3 = 0$.
+> Dato che $v_4$ può essere espresso come $1 \cdot v_1 + 1 \cdot v_2$, esso è "ridondante". L'insieme è **linearmente dipendente**.
 
-- **Esempio 2 (Dipendente):** L'insieme $F = \{(1, 1, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1)\}$ in $\mathbb{R}^3$ è linearmente dipendente. Ponendo una combinazione lineare uguale al vettore nullo:
-$$ \lambda_1(1,1,0) + \lambda_2(1,0,0) + \lambda_3(0,1,0) + \lambda_4(0,0,1) = (0,0,0) $$
-si ottiene il vettore $(\lambda_1 + \lambda_2, \lambda_1 + \lambda_3, \lambda_4) = (0,0,0)$, che conduce al sistema omogeneo:
-$$ \begin{cases} \lambda_1 + \lambda_2 = 0 \\ \lambda_1 + \lambda_3 = 0 \\ \lambda_4 = 0 \end{cases} $$
-Questo sistema di 3 equazioni in 4 incognite ammette infinite soluzioni non nulle (ad esempio, $\lambda_1 = 1, \lambda_2 = -1, \lambda_3 = -1, \lambda_4 = 0$). L'esistenza di una soluzione non banale dimostra la dipendenza lineare.
+^90ebda
+
+### Esempi di Verifica
+- **Esempio 1 (Indipendente):** L'insieme $\{(1, 0), (0, 1)\}$ in $\mathbb{R}^2$ è linearmente indipendente.
+    - **Approccio Intuitivo**: Il vettore $(1,0)$ modifica solo la prima componente, mentre $(0,1)$ modifica solo la seconda. È impossibile "costruire" uno usando l'altro. Ognuno ha un ruolo unico.
+    - **Approccio Formale**: L'equazione $\lambda_1(1, 0) + \lambda_2(0, 1) = (0, 0)$ porta al vettore $(\lambda_1, \lambda_2) = (0, 0)$, che implica necessariamente $\lambda_1 = 0$ e $\lambda_2 = 0$.
+
+- **Esempio 2 (Dipendente):** L'insieme $F = \{(1, 1, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1)\}$ in $\mathbb{R}^3$ è linearmente dipendente.
+    - **Approccio Intuitivo**: Osserviamo i primi tre vettori. Notiamo subito che $(1,1,0) = (1,0,0) + (0,1,0)$. Il primo vettore è "ridondante" perché può essere costruito dagli altri due. La presenza di un vettore ridondante rende l'intero insieme linearmente dipendente.
+    - **Approccio Formale**: Ponendo una combinazione lineare uguale al vettore nullo:
+    $$ \lambda_1(1,1,0) + \lambda_2(1,0,0) + \lambda_3(0,1,0) + \lambda_4(0,0,1) = (0,0,0) $$
+    si ottiene il vettore $(\lambda_1 + \lambda_2, \lambda_1 + \lambda_3, \lambda_4) = (0,0,0)$, che conduce al sistema omogeneo:
+    $$ \begin{cases} \lambda_1 + \lambda_2 = 0 \\ \lambda_1 + \lambda_3 = 0 \\ \lambda_4 = 0 \end{cases} $$
+    Questo sistema di 3 equazioni in 4 incognite ammette infinite soluzioni non nulle (ad esempio, $\lambda_1 = 1, \lambda_2 = -1, \lambda_3 = -1, \lambda_4 = 0$). L'esistenza di una soluzione non banale dimostra la dipendenza lineare.
 
 - **Esempio 3 (Vettore Nullo):** Qualsiasi insieme di vettori che contenga il vettore nullo $\mathbf{0}$ è sempre linearmente dipendente. È sufficiente considerare la combinazione lineare in cui il coefficiente del vettore nullo è non nullo (es. $1$) e tutti gli altri sono nulli.
 
@@ -47,7 +77,13 @@ La matrice dei coefficienti di questo sistema omogeneo 3x3 ha determinante diver
 ### Caratterizzazione della Dipendenza Lineare
 Una proprietà fondamentale lega la dipendenza lineare alla ridondanza dei vettori.
 
-**Proposizione:** Un insieme di vettori $F = \{v_1, \dots, v_n\}$ (con $n \ge 2$) è linearmente dipendente se e solo se esiste almeno un vettore $v_j$ nell'insieme che può essere espresso come combinazione lineare degli altri vettori.
+**Proposizione:** Un insieme di vettori $F = \{v_1, \dots, v_n\}$ (con $n \ge 2$) è linearmente dipendente se esiste almeno un vettore $v_j$ nell'insieme che può essere espresso come [[06 - Spazi Vettoriali, Sottospazi e Loro Operazioni#Somma di Sottospazi e Spazio Generato|combinazione lineare]] degli altri vettori.
+
+In altre parole, se esiste un indice $j \in \{1, \dots, n\}$ e un insieme di scalari $\mu_i \in \mathbb{R}$ tali che:
+$$ v_j = \sum_{i=1, i \neq j}^{n} \mu_i v_i $$
+
+> [!info] Collegamento con l'Intuizione
+> Questa proposizione è la formalizzazione matematica rigorosa dell'[[#^90ebda|idea intuitiva]] di vettore "ridondante". Stabilisce una perfetta equivalenza: la dipendenza lineare (definizione formale) e l'esistenza di un vettore "costruibile" dagli altri (concetto intuitivo) sono la stessa identica cosa.
 
 **Dimostrazione:**
 ($\implies$) Se $F$ è linearmente dipendente, esistono scalari $\lambda_1, \dots, \lambda_n$, non tutti nulli, tali che:
@@ -56,7 +92,7 @@ Poiché non tutti i coefficienti sono nulli, esiste almeno un $\lambda_j \neq 0$
 $$ \lambda_j v_j = - \sum_{i=1, i \neq j}^{n} \lambda_i v_i $$
 Essendo $\lambda_j \neq 0$, è possibile dividere per esso, ottenendo $v_j$ come combinazione lineare degli altri vettori:
 $$ v_j = \sum_{i=1, i \neq j}^{n} \left(-\frac{\lambda_i}{\lambda_j}\right) v_i $$
-($\impliedby$) Viceversa, se un vettore $v_j$ è combinazione lineare degli altri, allora $v_j = \sum_{i \neq j} \mu_i v_i$. Portando $v_j$ al secondo membro si ottiene $\sum_{i \neq j} \mu_i v_i - 1 \cdot v_j = \mathbf{0}$. Questa è una combinazione lineare nulla con almeno un coefficiente (quello di $v_j$, che è -1) non nullo, il che dimostra la dipendenza lineare.
+Ponendo $\mu_i = -\frac{\lambda_i}{\lambda_j}$, abbiamo espresso il vettore $v_j$ come combinazione lineare degli altri vettori dell'insieme, il che dimostra la tesi.
 
 ## Basi e Dimensione di uno Spazio Vettoriale
 
@@ -64,8 +100,8 @@ $$ v_j = \sum_{i=1, i \neq j}^{n} \left(-\frac{\lambda_i}{\lambda_j}\right) v_i 
 Il connubio tra i concetti di generazione e indipendenza lineare porta alla definizione di **base**.
 
 > **Definizione:** Una **base** di uno spazio vettoriale $V$ è un sottoinsieme di vettori $B \subseteq V$ che soddisfa due proprietà:
-> 1.  $B$ è un sistema di generatori per $V$ ($\langle B \rangle = V$).
-> 2.  $B$ è un insieme linearmente indipendente.
+> 1.  $B$ è un sistema di generatori per $V$ ($\langle B \rangle = V$).
+> 2.  $B$ è un insieme linearmente indipendente.
 
 Una base rappresenta l'insieme "perfetto" di vettori: abbastanza numeroso da generare l'intero spazio, ma senza elementi ridondanti (essendo linearmente indipendente). Grazie a queste proprietà, ogni vettore dello spazio si può scrivere in **modo unico** come combinazione lineare dei vettori della base. Gli scalari di tale combinazione sono detti **coordinate** del vettore rispetto a quella base.
 
@@ -84,10 +120,10 @@ Questo permette di associare un numero univoco a ogni spazio vettoriale e di ved
 La cardinalità (numero di elementi) di una qualsiasi base di uno spazio vettoriale $V$ è chiamata **dimensione** di $V$, e si denota con $\dim(V)$.
 
 - **Esempi:**
-    - $\dim(\mathbb{R}^2) = 2$. Una base è $\{(1, 0), (0, 1)\}$.
-    - $\dim(\mathbb{R}^3) = 3$. Una base è $\{(1, 0, 0), (0, 1, 0), (0, 0, 1)\}$.
-    - In generale, $\dim(\mathbb{R}^n) = n$. La base più naturale, chiamata **base standard** o **canonica**, è formata dai vettori $e_i$ che hanno un $1$ nella $i$-esima posizione e $0$ altrove.
-    - Lo spazio vettoriale nullo $\{\mathbf{0}\}$ ha dimensione 0, in quanto l'unico sottoinsieme non vuoto, $\{\mathbf{0}\}$, è linearmente dipendente, quindi non può avere una base.
+    - $\dim(\mathbb{R}^2) = 2$. Una base è $\{(1, 0), (0, 1)\}$.
+    - $\dim(\mathbb{R}^3) = 3$. Una base è $\{(1, 0, 0), (0, 1, 0), (0, 0, 1)\}$.
+    - In generale, $\dim(\mathbb{R}^n) = n$. La base più naturale, chiamata **base standard** o **canonica**, è formata dai vettori $e_i$ che hanno un $1$ nella $i$-esima posizione e $0$ altrove.
+    - Lo spazio vettoriale nullo $\{\mathbf{0}\}$ ha dimensione 0, in quanto l'unico sottoinsieme non vuoto, $\{\mathbf{0}\}$, è linearmente dipendente, quindi non può avere una base.
 
 ## L'Importanza dell'Approccio Algebrico in Geometria
 La definizione algebrica di dimensione fornisce uno strumento potente per studiare la geometria in modo rigoroso, superando i limiti dell'intuizione visiva. Mentre la nostra esperienza si ferma a tre dimensioni, l'algebra lineare ci permette di definire e operare in spazi di dimensione $n$ qualsiasi, come $\mathbb{R}^n$, semplicemente come l'insieme di $n$-uple di numeri reali.
