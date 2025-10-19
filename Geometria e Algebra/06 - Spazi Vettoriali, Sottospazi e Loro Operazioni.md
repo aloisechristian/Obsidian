@@ -111,7 +111,7 @@ Per ovviare al problema dell'unione, si introduce il concetto di **spazio genera
 
 - Dato un sottoinsieme qualsiasi $S \subseteq V$, il **sottospazio generato da S**, denotato con $\langle S \rangle$, è l'insieme di tutte le possibili combinazioni lineari di elementi di $S$:
 $$ \langle S \rangle = \left\{ \sum_{i=1}^m \lambda_i v_i \mid m \in \mathbb{N}, \lambda_i \in \mathbb{R}, v_i \in S \right\} $$
-`S` è l'insieme dei "generatori" (gli ingredienti), mentre $<S>$ è l'insieme di tutto ciò che si può "costruire" con essi. Per costruzione, **$<S>$ è sempre un sottospazio**. Inoltre, è **il più piccolo sottospazio di V che contiene S**.
+$S$ è l'insieme dei "generatori" (gli ingredienti), mentre $<S>$ è l'insieme di tutto ciò che si può "costruire" con essi. Per costruzione, **$<S>$ è sempre un sottospazio**. Inoltre, è **il più piccolo sottospazio di V che contiene S**.
 
 - La **somma** di due sottospazi $W_1$ e $W_2$ è definita come il sottospazio generato dalla loro unione:
 $$ W_1 + W_2 := \langle W_1 \cup W_2 \rangle $$
