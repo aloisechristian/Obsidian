@@ -111,3 +111,54 @@ Siano $U, W$ sottospazi di uno spazio vettoriale $V$ di dimensione finita.
     * $U \subseteq W$
     * $U \cap W = U$
     * $U + W = W$
+
+---
+
+## Applicazioni Lineari (Omomorfismi)
+
+### Proposizione (Immagine del Vettore Nullo)
+**Nome:** *Conservazione del Vettore Nullo*
+Se $f: V \to W$ è un'[[10 - Applicazioni Lineari, Nucleo, Immagine e Rango#Definizione di Applicazione Lineare (Omomorfismo)|applicazione lineare]], allora l'immagine del vettore nullo del dominio è il vettore nullo del codominio:
+$$f(0_V) = 0_W$$
+
+### Proposizione (Definizione tramite Azione sulla Base)
+**Nome:** *Esistenza e Unicità dell'Omomorfismo*
+Dati due [[06 - Spazi Vettoriali, Sottospazi e Loro Operazioni|spazi vettoriali]] $V$ e $W$, una [[07 - Indipendenza Lineare, Basi e Dimensione Vettoriale#Definizione di Base|base]] $B = \{b_1, \dots, b_n\}$ di $V$ e $n$ vettori arbitrari $w_1, \dots, w_n \in W$, esiste ed è **unico** l'omomorfismo $f: V \to W$ tale che:
+$$f(b_i) = w_i \quad \forall i=1, \dots, n$$
+*(L'applicazione lineare è completamente determinata dalla sua azione su una base del dominio)*.
+
+### Teorema (Struttura di Nucleo e Immagine)
+**Nome:** *Nucleo e Immagine come Sottospazi*
+Sia $f: V \to W$ un'applicazione lineare. Allora:
+1.  Il [[10 - Applicazioni Lineari, Nucleo, Immagine e Rango#Nucleo (Kernel)|Nucleo]] di $f$, $\text{Ker}(f)$, è un sottospazio vettoriale del dominio $V$.
+2.  L'[[10 - Applicazioni Lineari, Nucleo, Immagine e Rango#Immagine (Im)|Immagine]] di $f$, $\text{Im}(f)$, è un sottospazio vettoriale del codominio $W$.
+
+### Corollario (Generatori dell'Immagine)
+**Nome:** *Immagine dei Generatori*
+Sia $f: V \to W$ un'applicazione lineare. Se $V$ è [[07 - Indipendenza Lineare, Basi e Dimensione Vettoriale#Sistemi di Generatori|generato]] da un insieme di vettori $S = \{v_1, \dots, v_n\}$, allora $\text{Im}(f)$ è generata dalle immagini di questi vettori:
+$$\text{Im}(f) = \text{Span}(f(v_1), \dots, f(v_n))$$
+
+### Teorema (Teorema della Dimensione per Applicazioni Lineari)
+**Nome:** *Teorema della Dimensione (o Rango-Nullità)*
+Sia $f: V \to W$ un'applicazione lineare e sia $V$ uno spazio vettoriale di dimensione finita. Allora vale la seguente relazione:
+$$\dim(V) = \dim(\text{Ker}(f)) + \dim(\text{Im}(f))$$
+La dimensione del dominio è la somma della dimensione del nucleo (**nullità**) e della dimensione dell'immagine (**rango**).
+*(Questo è l'analogo per le applicazioni lineari del [[Teoremi, Corollari, Lemmi e Proposizioni per gli spazi vettoriali#^58117a|Teorema Rango-Nullità]] definito per le matrici)*.
+
+### Proposizione (Criterio di Iniettività)
+**Nome:** *Caratterizzazione dell'Iniettività tramite Nucleo*
+Un'applicazione lineare $f: V \to W$ è iniettiva (un **monomorfismo**) se e solo se il suo nucleo è il sottospazio nullo:
+$$f \text{ è iniettiva} \iff \text{Ker}(f) = \{0_V\}$$
+(Ovvero, $\dim(\text{Ker}(f)) = 0$).
+
+### Proposizione (Caratterizzazione tramite Immagine di Base)
+**Nome:** *Criteri di Classificazione su Base*
+Sia $f: V \to W$ un'applicazione lineare, $\dim(V)=n$, e $B = \{b_1, \dots, b_n\}$ una base di $V$.
+1.  $f$ è **iniettiva** (monomorfismo) $\iff$ l'insieme $\{f(b_1), \dots, f(b_n)\}$ è linearmente indipendente in $W$.
+2.  $f$ è **suriettiva** (epimorfismo) $\iff$ l'insieme $\{f(b_1), \dots, f(b_n)\}$ genera $W$.
+3.  $f$ è **biettiva** (isomorfismo) $\iff$ l'insieme $\{f(b_1), \dots, f(b_n)\}$ è una base di $W$.
+
+### Corollario (Teorema Fondamentale degli Isomorfismi)
+**Nome:** *Criterio Dimensionale per Isomorfismo*
+Due spazi vettoriali $V$ e $W$ di dimensione finita sono [[10 - Applicazioni Lineari, Nucleo, Immagine e Rango#Proprietà delle Applicazioni Lineari Iniettività Suriettività Biettività|isomorfi]] se e solo se hanno la stessa dimensione.
+$$V \cong W \iff \dim(V) = \dim(W)$$
