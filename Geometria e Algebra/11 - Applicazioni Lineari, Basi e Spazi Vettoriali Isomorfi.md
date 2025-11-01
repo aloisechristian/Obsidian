@@ -28,7 +28,7 @@ Poiché $g(v) = f(v)$ per ogni $v \in V$, le due applicazioni sono identiche ($f
 
 Consideriamo un'applicazione lineare $f$ dallo spazio delle matrici reali $2 \times 2$, denotato con $M_{2,2}(\mathbb{R})$, allo spazio dei polinomi di grado al più 1, denotato con $\mathbb{R}_1[t]$. (Vedi [[Geometria e Algebra/06 - Spazi Vettoriali, Sottospazi e Loro Operazioni#Esempi di Spazi Vettoriali|Esempi di Spazi Vettoriali]]).
 
-1.  **Fissiamo una base del dominio $M_{2,2}(\mathbb{R})$:** La base canonica è costituita dalle matrici ($\dim(M_{2,2}(\mathbb{R}))=4$):
+1.  **Fissiamo una base del dominio $M_{2,2}(\mathbb{R})$:** La base standard è costituita dalle matrici ($\dim(M_{2,2}(\mathbb{R}))=4$):
     $B_1 = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$, $B_2 = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$, $B_3 = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$, $B_4 = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$.
 2.  **Scegliamo 4 vettori nel codominio $\mathbb{R}_1[t]$:** (Notiamo che $\dim(\mathbb{R}_1[t])=2$). Scegliamo ad esempio i polinomi $1$, $t$, $t+1$, e $t-1$.
 3.  **Definiamo l'azione di $f$ sulla base:**
