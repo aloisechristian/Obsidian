@@ -4,7 +4,7 @@ La presente lezione introduce i concetti di sottoprogramma e libreria, elementi 
 
 ### Il Principio di Modularità
 
-Alla base dei sottoprogrammi e delle librerie vi è il principio di **modularità**, che consiste nell'organizzare un sistema complesso, come un programma software, in componenti distinti e autonomi, detti moduli. Questo approccio facilita la progettazione, l'implementazione, la comprensione e l'utilizzo del sistema. A livello hardware, un esempio di modularità è l'uso di un `[[Fondamenti di Informatica/07 - Architettura del Calcolatore, Bus, Clock e Memoria#1. Il Sistema di Bus|bus di sistema]]` per permettere la comunicazione tra componenti diversi.
+Alla base dei sottoprogrammi e delle librerie vi è il principio di **modularità**, che consiste nell'organizzare un sistema complesso, come un programma software, in componenti distinti e autonomi, detti moduli. Questo approccio facilita la progettazione, l'implementazione, la comprensione e l'utilizzo del sistema. A livello hardware, un esempio di modularità è l'uso di un [[Fondamenti di Informatica/07 - Architettura del Calcolatore, Bus, Clock e Memoria#1. Il Sistema di Bus|bus di sistema]] per permettere la comunicazione tra componenti diversi.
 
 Applicare la modularità a un programma significa scomporlo in sottocomponenti, ciascuno responsabile di una funzione specifica. Ogni modulo deve possedere un nome, svolgere compiti ben definiti e operare in modo autonomo, senza dipendere da altri moduli. I benefici principali della modularità sono:
 
