@@ -109,7 +109,7 @@ Ad ogni applicazione lineare $f: V \to W$ sono associati due sottoinsiemi di fon
 > [!warning] Attenzione
 > Se $\{v_1, \dots, v_n\}$ è una [[07 - Indipendenza Lineare, Basi e Dimensione Vettoriale#Definizione di Base|base]] di $V$, l'insieme delle immagini $\{f(v_1), \dots, f(v_n)\}$ genera $\text{Im}(f)$, ma **non** è necessariamente una base per $\text{Im}(f)$, in quanto potrebbe essere linearmente dipendente.
 
-## Il Teorema del Rango (o della Dimensione)
+## Il Teorema del Rango (o della Dimensione o dell'Omomorfismo)
 
 Poiché nucleo e immagine sono sottospazi vettoriali, possiamo considerare la loro [[07 - Indipendenza Lineare, Basi e Dimensione Vettoriale#Definizione di Dimensione|dimensione]]. Queste dimensioni sono così importanti da avere nomi specifici.
 
