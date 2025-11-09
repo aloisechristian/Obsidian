@@ -100,12 +100,13 @@ $$M_f^{\mathcal{B},\mathcal{C}} = (M_I^{\mathcal{C},\mathcal{W}})^{-1} \cdot M_f
 
 La relazione può essere visualizzata tramite un diagramma commutativo, che aiuta a ricordare la formula e le direzioni delle trasformazioni. Il diagramma mostra che si può "andare" da $[v]_\mathcal{B}$ a $[f(v)]_\mathcal{C}$ in due modi che danno lo stesso risultato.
 
-```flowchart TD
-    A["\[v\]_B"] -- "M_f^{B,C}" --> B["\[f(v)\]_C"]
-    C["\[v\]_V"] -- "M_f^{V,W}" --> D["\[f(v)\]_W"]
-    A -- "M_I^{B,V} (da B a V)" --> C
-    D -- "(M_I^{C,W})^{-1} (da W a C)" --> B
-```
+$$
+\begin{CD}
+[v]_\mathcal{B}    @>{M_f^{\mathcal{B},\mathcal{C}}}>>    [f(v)]_\mathcal{C} \\
+@V{M_I^{\mathcal{B},\mathcal{V}}}VV                            @AA{(M_I^{\mathcal{C},\mathcal{W}})^{-1}}A \\
+[v]_\mathcal{V}    @>>{M_f^{\mathcal{V},\mathcal{W}}}>       [f(v)]_\mathcal{W}
+\end{CD}
+$$
 
 - **Percorso Diretto (sopra):** Moltiplicazione per $M_f^{\mathcal{B},\mathcal{C}}$.
     
@@ -228,11 +229,3 @@ Ora dobbiamo applicare la formula:
 $$M_f^{\mathcal{B},\mathcal{C}} = C^{-1} \cdot M_f^{E_2,E_3} \cdot B$$
 
 Calcolando l'inversa di $C$ (ad esempio con Gauss-Jordan) e svolgendo il prodotto matriciale, si ottiene esattamente la stessa matrice $M_f^{\mathcal{B}, \mathcal{C}}$ calcolata con il metodo diretto, verificando così la coerenza della teoria.
-
-$$
-\begin{CD}
-[v]_\mathcal{B}    @>{M_f^{\mathcal{B},\mathcal{C}}}>>    [f(v)]_\mathcal{C} \\
-@V{M_I^{\mathcal{B},\mathcal{V}}}VV                            @AA{(M_I^{\mathcal{C},\mathcal{W}})^{-1}}A \\
-[v]_\mathcal{V}    @>>{M_f^{\mathcal{V},\mathcal{W}}}>       [f(v)]_\mathcal{W}
-\end{CD}
-$$
