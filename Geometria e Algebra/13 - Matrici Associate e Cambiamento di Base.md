@@ -228,3 +228,10 @@ Ora dobbiamo applicare la formula:
 $$M_f^{\mathcal{B},\mathcal{C}} = C^{-1} \cdot M_f^{E_2,E_3} \cdot B$$
 
 Calcolando l'inversa di $C$ (ad esempio con Gauss-Jordan) e svolgendo il prodotto matriciale, si ottiene esattamente la stessa matrice $M_f^{\mathcal{B}, \mathcal{C}}$ calcolata con il metodo diretto, verificando così la coerenza della teoria.
+
+$$
+\begin{tikzcd}
+{[v]_\mathcal{B}} \arrow[r, "{M_f^{\mathcal{B},\mathcal{C}}}"] \arrow[d, swap, "{M_I^{\mathcal{B},\mathcal{V}}}"] & {[f(v)]_\mathcal{C}} \\
+{[v]_\mathcal{V}} \arrow[r, swap, "{M_f^{\mathcal{V},\mathcal{W}}}"] & {[f(v)]_\mathcal{W}} \arrow[u, "{(M_I^{\mathcal{C},\mathcal{W}})^{-1}}"]
+\end{tikzcd}
+$$
