@@ -8,7 +8,7 @@ Questa lezione approfondisce la relazione tra le matrici associate a un'applicaz
 
 Consideriamo un'applicazione lineare $f: V \to W$ tra due spazi vettoriali $V$ e $W$. Fissate una base $\mathcal{V} = \{v_1, \dots, v_n\}$ per $V$ e una base $\mathcal{W} = \{w_1, \dots, w_m\}$ per $W$, è possibile associare a $f$ un'unica matrice, denotata con $M_f^{\mathcal{V},\mathcal{W}}$.
 
-**Definizione:** La matrice $M_f^{\mathcal{V},\mathcal{W}}$ è la matrice di dimensioni $m \times n$ le cui colonne sono i vettori delle coordinate delle immagini dei vettori della base del dominio, espressi rispetto alla base del codominio. In simboli, la $j$-esima colonna della matrice è il vettore $[f(v_j)]_\mathcal{W}$.
+**Definizione:** La matrice $M_f^{\mathcal{V},\mathcal{W}}$ è la matrice di dimensioni $m \times n$ le cui colonne sono le immagini dei vettori della base del dominio, espressi rispetto alla base del codominio. In simboli, la $j$-esima colonna della matrice è il vettore $[f(v_j)]_\mathcal{W}$.
 
 La proprietà fondamentale di questa matrice è che permette di calcolare l'immagine di un qualsiasi vettore $v \in V$ tramite un prodotto matrice-vettore:
 
@@ -19,7 +19,7 @@ Dove:
 - $[v]_\mathcal{V}$ è il vettore delle coordinate di $v$ rispetto alla base $\mathcal{V}$ (una matrice colonna $n \times 1$).
     
 - $[f(v)]_\mathcal{W}$ è il vettore delle coordinate di $f(v)$ rispetto alla base $\mathcal{W}$ (una matrice colonna $m \times 1$).
-    
+
 
 ## Il Problema del Cambiamento di Base
 
