@@ -155,7 +155,7 @@ Per calcolare la matrice associata $M_f^{\mathcal{B},\mathcal{C}}$, si possono s
 
 ## Esempio Svolto: Applicazione da R² a R³
 
-Sia $f: \mathbb{R}^2 \to \mathbb{R}^3$ l'applicazione lineare definita da $f(x, y) = (x+y, x-y, -2y)$. Le coordinate sono intese rispetto alle basi canoniche $E_2$ di $\mathbb{R}^2$ e $E_3$ di $\mathbb{R}^3$.
+Sia $f: \mathbb{R}^2 \to \mathbb{R}^3$ l'applicazione lineare definita da $f(x, y) = (x+y, x-y, -2y)$. Le coordinate sono intese rispetto alle basi standard $E_2$ di $\mathbb{R}^2$ e $E_3$ di $\mathbb{R}^3$.
 
 Consideriamo le seguenti basi:
 
