@@ -147,3 +147,61 @@ Una proprietà fondamentale lega l'iniettività al nucleo dell'applicazione line
 *Dimostrazione:*
 - ($\implies$) Assumiamo $f$ iniettiva. Sappiamo che $f(0_V)=0_W$, quindi $0_V \in \text{Ker}(f)$. Sia $v \in \text{Ker}(f)$ un vettore qualsiasi. Allora $f(v)=0_W$. Poiché $f(0_V)=0_W$, abbiamo $f(v)=f(0_V)$. Essendo $f$ iniettiva, questo implica $v=0_V$. Dunque, l'unico elemento nel nucleo è il vettore nullo.
 - ($\impliedby$) Assumiamo $\text{Ker}(f) = \{0_V\}$. Siano $v_1, v_2 \in V$ tali che $f(v_1) = f(v_2)$. Allora $f(v_1) - f(v_2) = 0_W$. Per la linearità di $f$, $f(v_1 - v_2) = 0_W$. Questo significa che il vettore $v_1 - v_2$ appartiene al nucleo di $f$. Ma per ipotesi, il nucleo contiene solo il vettore nullo, quindi $v_1 - v_2 = 0_V$, da cui $v_1 = v_2$. Questo dimostra che $f$ è iniettiva.
+
+---
+
+## Strategie Operative dagli Esercizi
+
+La teoria definisce i concetti, ma gli esercizi richiedono strategie specifiche. Ecco alcune "ricette" pratiche emerse dalla risoluzione dei problemi.
+
+### 1. Ricetta: Analisi con Parametri (Esercizi 5, 6)
+
+**Obiettivo:** Discutere Iniettività e Suriettività di un'applicazione $L_A$ al variare di un parametro ($t$ o $h$) nella matrice $A$.
+
+La strategia dipende dalla forma della matrice $A$ (di tipo $m \times n$):
+
+> [!TIP] Caso 1: Matrice Quadrata ($m = n$)
+> Questo è il caso più semplice. L'applicazione $L_A: V \to V$ è un endomorfismo.
+> 1.  Le proprietà di [[10 - Applicazioni Lineari, Nucleo, Immagine e Rango#Proprietà delle Applicazioni Lineari|Iniettività, Suriettività e Biettività (Isomorfismo)]] **coincidono**.
+> 2.  L'applicazione ha queste proprietà se e solo se la matrice è [[03 - Rango, Invertibilità delle Matrici e Permutazioni|invertibile]].
+> 3.  **Azione:** Calcola il **determinante** $\det(A)$ in funzione del parametro.
+> 4.  **Discussione:**
+>     * Se $\det(A) \neq 0$: (il rango è massimo) $\implies$ $L_A$ è **Iniettiva, Suriettiva e un Isomorfismo**.
+>     * Se $\det(A) = 0$: (il rango è < n) $\implies$ $L_A$ **non è né Iniettiva né Suriettiva**.
+
+> [!TIP] Caso 2: Matrice Rettangolare ($m \neq n$)
+> L'applicazione $L_A$ non può **mai** essere un isomorfismo.
+> 1.  **Azione:** Calcola il **rango** $\text{rank}(A)$ in funzione del parametro (solitamente usando il metodo dei minori o Gauss).
+> 2.  **Discussione (Iniettività):**
+>     * $L_A$ è Iniettiva $\iff \dim(\text{Ker}) = 0 \iff \text{rank}(A) = n$ (numero di colonne).
+>     * Se $n > m$ (es. $A: \mathbb{R}^3 \to \mathbb{R}^2$), è **impossibile** che sia iniettiva.
+> 3.  **Discussione (Suriettività):**
+>     * $L_A$ è Suriettiva $\iff \dim(\text{Im}) = m \iff \text{rank}(A) = m$ (numero di righe).
+>     * Se $m > n$ (es. $A: \mathbb{R}^2 \to \mathbb{R}^3$), è **impossibile** che sia suriettiva.
+
+### 2. Ricetta: Immagine di un Sottospazio (Esercizio 7)
+
+**Obiettivo:** Trovare la base e la dimensione di $L(U)$, dove $U$ è un *sottospazio* del dominio (es. $U$ è un piano in $\mathbb{R}^4$).
+
+**Strategia:**
+1.  Trova una base per il sottospazio $U$. (Nell'Esercizio 7, questo si fa risolvendo il sistema omogeneo che definisce $U$). Sia $\mathcal{B}_U = \{v_1, \dots, v_k\}$.
+2.  Applica l'omomorfismo $L$ a *ciascun vettore* della base $\mathcal{B}_U$. (Nell'Esercizio 7, si calcolano $w_1 = A \cdot v_1$ e $w_2 = A \cdot v_2$).
+3.  Il sottospazio immagine $L(U)$ è l'insieme generato da questi nuovi vettori:
+    $$L(U) = \text{span}\{L(v_1), \dots, L(v_k)\}$$
+4.  Per trovare la **base di $L(U)$**, basta estrarre una base dall'insieme di generatori $\{L(v_1), \dots, L(v_k)\}$ (verificando la loro indipendenza lineare, ad esempio calcolando il rango della matrice che li ha come colonne).
+
+### 3. Ricetta: Gestire Spazi "Astratti" (Polinomi) (Esercizi 11, 12)
+
+**Obiettivo:** Risolvere problemi su spazi come $\mathbb{R}[t]_{\le n}$ (spazio dei polinomi).
+
+**Strategia:** Non farsi spaventare. Questi spazi sono [[11 - Applicazioni Lineari, Basi e Spazi Vettoriali Isomorfi|isomorfi]] a $\mathbb{R}^k$. Il trucco è **tradurli** in vettori di coordinate.
+
+1.  **Identifica la Dimensione:** Ricorda che $\dim(\mathbb{R}[t]_{\le n}) = n + 1$ (perché c'è il termine $t^0 = 1$).
+    * $\mathbb{R}[t]_{\le 1} \implies \dim = 2$.
+    * $\mathbb{R}[t]_{\le 2} \implies \dim = 3$.
+    * $\mathbb{R}[t]_{\le 3} \implies \dim = 4$.
+2.  **Scegli una Base:** Solitamente la [[08 - Basi, Dimensione e Rappresentazione di Spazi Vettoriali|base standard (monomiale)]]:
+    * Per $\mathbb{R}[t]_{\le 2}$: $\mathcal{B} = \{1, t, t^2\}$
+3.  **Traduci:** Ogni polinomio diventa un vettore di coordinate:
+    * $p(t) = 5 - 2t + 4t^2 \implies [p]_{\mathcal{B}} = (5, -2, 4) \in \mathbb{R}^3$.
+4.  **Risolvi:** Un'applicazione $L: \mathbb{R}[t]_{\le 2} \to \mathbb{R}[t]_{\le 1}$ è (nascostamente) un'applicazione $L_A: \mathbb{R}^3 \to \mathbb{R}^2$. Puoi trovare la [[12- Rappresentazione Matriciale degli Omomorfismi e Applicazioni|matrice associata]] $A$ (di tipo $2 \times 3$) e usare tutti gli strumenti standard (rango, ker, col) per analizzare $L$.
