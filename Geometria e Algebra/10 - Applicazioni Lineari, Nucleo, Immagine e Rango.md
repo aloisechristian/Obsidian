@@ -194,7 +194,7 @@ La strategia dipende dalla forma della matrice $A$ (di tipo $m \times n$):
 
 **Obiettivo:** Risolvere problemi su spazi come $\mathbb{R}[t]_{\le n}$ (spazio dei polinomi).
 
-**Strategia:** Non farsi spaventare. Questi spazi sono [[11 - Applicazioni Lineari, Basi e Spazi Vettoriali Isomorfi|isomorfi]] a $\mathbb{R}^k$. Il trucco è **tradurli** in vettori di coordinate.
+**Strategia:** Questi spazi sono [[11 - Applicazioni Lineari, Basi e Spazi Vettoriali Isomorfi|isomorfi]] a $\mathbb{R}^k$. Il trucco è **tradurli** in vettori di coordinate.
 
 1.  **Identifica la Dimensione:** Ricorda che $\dim(\mathbb{R}[t]_{\le n}) = n + 1$ (perché c'è il termine $t^0 = 1$).
     * $\mathbb{R}[t]_{\le 1} \implies \dim = 2$.
@@ -204,4 +204,4 @@ La strategia dipende dalla forma della matrice $A$ (di tipo $m \times n$):
     * Per $\mathbb{R}[t]_{\le 2}$: $\mathcal{B} = \{1, t, t^2\}$
 3.  **Traduci:** Ogni polinomio diventa un vettore di coordinate:
     * $p(t) = 5 - 2t + 4t^2 \implies [p]_{\mathcal{B}} = (5, -2, 4) \in \mathbb{R}^3$.
-4.  **Risolvi:** Un'applicazione $L: \mathbb{R}[t]_{\le 2} \to \mathbb{R}[t]_{\le 1}$ è (nascostamente) un'applicazione $L_A: \mathbb{R}^3 \to \mathbb{R}^2$. Puoi trovare la [[12- Rappresentazione Matriciale degli Omomorfismi e Applicazioni|matrice associata]] $A$ (di tipo $2 \times 3$) e usare tutti gli strumenti standard (rango, ker, col) per analizzare $L$.
+4.  **Risolvi:** Un'applicazione $L: \mathbb{R}[t]_{\le 2} \to \mathbb{R}[t]_{\le 1}$ è un'applicazione $L_A: \mathbb{R}^3 \to \mathbb{R}^2$. Puoi trovare la [[12- Rappresentazione Matriciale degli Omomorfismi e Applicazioni|matrice associata]] $A$ (di tipo $2 \times 3$) e usare tutti gli strumenti standard (rango, ker, col) per analizzare $L$.
