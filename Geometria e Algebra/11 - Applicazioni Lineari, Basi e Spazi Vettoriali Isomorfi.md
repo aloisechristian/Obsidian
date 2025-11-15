@@ -76,6 +76,39 @@ Sia $f: V \to W$ un'applicazione lineare e $B = \{b_1, \dots, b_n\}$ una base di
 
 (Nota: queste caratterizzazioni sono strettamente collegate al [[Geometria e Algebra/10 - Applicazioni Lineari, Nucleo, Immagine e Rango#Teorema della Dimensione (o del Rango)|Teorema della Dimensione (Nullità + Rango)]], che stabilisce $\dim(V) = \dim(\ker(f)) + \dim(\text{Im}(f))$).
 
+---
+
+## Corollario Pratico: Confronto Dimensionale (n vs m)
+
+Le proposizioni precedenti, basate sul [[07 - Indipendenza Lineare, Basi e Dimensione Vettoriale#Lemma di Steinitz (Teorema dello Scambio)|Lemma di Steinitz]], ci danno due regole fondamentali per un'applicazione $L: V \to W$ con $\dim(V)=n$ e $\dim(W)=m$:
+1.  Se $L$ è **INIETTIVA** $\implies n \le m$ (La dimensione del dominio non può superare quella del codominio).
+2.  Se $L$ è **SURIETTIVA** $\implies n \ge m$ (La dimensione del dominio non può essere inferiore a quella del codominio).
+
+Questo ci permette di creare un "filtro" immediato per qualsiasi applicazione, riassunto in questa tabella:
+
+| Caso | Confronto Dimensioni | Esempio                                         | Può essere INIETTIVA?                                                                                                                           | Può essere SURIETTIVA?                                                                                                                                                |                                                                                                                   |
+| :--- | :------------------- | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 1    | **$n > m$**          | $L: \mathbb{R}^3 \to \mathbb{R}^2$ ($n=3, m=2$) | **NO, MAI.** <br> (Se fosse iniettiva, $n$ dovrebbe essere $\le m$, ma $3 \not\le 2$). Il [[10 - Applicazioni Lineari, Nucleo, Immagine e Rango | Teorema del Rango]] implica $\dim(\text{Ker}) = n - \text{rank} \ge n - m > 0$.                                                                                       | **SÌ, POSSIBILE.** <br> (Se $\text{rank}(L) = m = 2$). La regola 2 ($n \ge m$) è rispettata. (Vedi Esercizio 5B). |
+| 2    | **$n < m$**          | $L: \mathbb{R}^2 \to \mathbb{R}^3$ ($n=2, m=3$) | **SÌ, POSSIBILE.** <br> (Se $\text{rank}(L) = n = 2$). La regola 1 ($n \le m$) è rispettata. (Vedi Esercizio 5C).                               | **NO, MAI.** <br> (Se fosse suriettiva, $n$ dovrebbe essere $\ge m$, ma $2 \not\ge 3$). L'immagine $\dim(\text{Im}) = \text{rank}(L) \le n < m$. Non può coprire $W$. |                                                                                                                   |
+| 3    | **$n = m$**          | $L: \mathbb{R}^3 \to \mathbb{R}^3$ ($n=3, m=3$) | **SÌ, POSSIBILE.**                                                                                                                              | **SÌ, POSSIBILE.**                                                                                                                                                    |                                                                                                                   |
+
+---
+### Il Caso Speciale $n = m$ (Endomorfismi)
+
+Questo è il caso più importante. Quando le dimensioni sono uguali, le proprietà collassano in un'unica condizione.
+
+Per un'applicazione $L: V \to W$ con $\dim(V) = \dim(W) = n$:
+
+**$L$ è INIETTIVA $\iff L$ è SURIETTIVA $\iff L$ è un ISOMORFISMO**
+
+Questo discende direttamente dal [[10 - Applicazioni Lineari, Nucleo, Immagine e Rango|Teorema del Rango]]:
+* $L$ è iniettiva $\iff \dim(\text{Ker})=0 \iff \text{rank}=n$
+* $L$ è suriettiva $\iff \dim(\text{Im})=n \iff \text{rank}=n$
+
+Entrambe le condizioni equivalgono a $\text{rank}=n$, che per matrici quadrate associate $A$ equivale a $\det(A) \neq 0$.
+
+---
+
 ## Il Teorema Fondamentale degli Isomorfismi
 
 Da queste caratterizzazioni deriva un corollario di immensa importanza pratica.
