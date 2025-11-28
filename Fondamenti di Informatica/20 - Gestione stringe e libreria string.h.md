@@ -77,9 +77,9 @@ Le operazioni sulle stringhe richiedono la libreria `<string.h>`.
 
 ### 2.2 Ricerca e Sottostringhe
 
-- **`strchr(s, c)`:** Restituisce un **puntatore** alla prima occorrenza del carattere `$c$` in `$s`, oppure `NULL`.
+- **`strchr(s, c)`:** Restituisce un **puntatore** alla prima occorrenza del carattere $c$ in $s$, oppure `NULL`.
     
-- **`strstr(s1, s2)`:** Restituisce un puntatore alla prima occorrenza della _sottostringa_ `$s2$` in `$s1`.
+- **`strstr(s1, s2)`:** Restituisce un puntatore alla prima occorrenza della _sottostringa_ $s2$ in $s1$.
     
 
 ## 3. Input/Output Robusto: `scanf` vs `fgets`
