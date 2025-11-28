@@ -101,14 +101,14 @@ La funzione `scanf("%s", str)` legge fino al primo _whitespace_ (spazio, tabulaz
 
 La funzione `fgets` è progettata per leggere righe intere, rispettando i limiti del buffer per evitare overflow.
 
-```
+```c
 char buffer[100];
 fgets(buffer, 100, stdin);
 ```
 
 **Gestione del Newline:** `fgets` include il carattere `\n` nella stringa se c'è spazio. Questo è spesso indesiderato per i confronti (es. `strcmp`). _Tecnica di rimozione:_
 
-```
+```c
 // Cerca il \n e lo sostituisce con il terminatore \0
 buffer[strcspn(buffer, "\n")] = '\0';
 ```
@@ -119,7 +119,7 @@ Quando si mescolano `scanf` (lettura formattata) e `fgets` (lettura di riga), il
 
 **Soluzione Portabile:** Poiché `fflush(stdin)` non è standard ANSI C per gli stream di input (funziona solo su alcuni compilatori come MSVC, ma non su GCC/Linux), si deve usare un ciclo di consumazione:
 
-```
+```c
 void flush_input_buffer() {
     int c;
     // Legge caratteri finché non trova un newline o la fine del file
@@ -135,7 +135,7 @@ Obiettivo: Separare vocali e consonanti da una stringa in input.
 
 **Logica e Gestione della Memoria:** L'algoritmo richiede un singolo passaggio (complessità $O(N)$) sulla stringa originale.
 
-```
+```c
 #include <stdio.h>
 #include <ctype.h> // Utile per tolower() e isalpha()
 #include <string.h>
