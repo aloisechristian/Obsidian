@@ -68,12 +68,12 @@ In C, le stringhe non sono un tipo primitivo, ma array di `char` terminati dal c
 
 Le operazioni sulle stringhe richiedono la libreria `<string.h>`.
 
-| Funzione               | Descrizione e Note                                                                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`strlen(s)`**        | Calcola la lunghezza escludendo `\0`. Complessità $O(N)$.                                                                                               |
-| **`strcpy(dst, src)`** | Copia $src$ in `$dst$`. ⚠️ **Pericolo:** Se `$dst$` è più piccolo di `$src$`, si verifica un buffer overflow.                                           |
-| **`strcat(dst, src)`** | Concatena `$src$` alla fine di `$dst$`. Cerca il `\0` di `$dst` e inizia a copiare lì.                                                                  |
-| **`strcmp(s1, s2)`**   | Confronto lessicografico (basato su ASCII).<br><br>- `0`: uguali.<br><br>- `<0`: `$s1$` viene prima di `$s2$`.<br><br>- `>0`: `$s1$` viene dopo `$s2$`. |
+| Funzione               | Descrizione e Note                                                                                                                              |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`strlen(s)`**        | Calcola la lunghezza escludendo `\0`. Complessità $O(N)$.                                                                                       |
+| **`strcpy(dst, src)`** | Copia $src$ in $dst$. ⚠️ **Pericolo:** Se $dst$ è più piccolo di $src$, si verifica un buffer overflow.                                         |
+| **`strcat(dst, src)`** | Concatena $src$ alla fine di $dst$. Cerca il `\0` di $dst$ e inizia a copiare lì.                                                               |
+| **`strcmp(s1, s2)`**   | Confronto lessicografico (basato su ASCII).<br><br>- `0`: uguali.<br><br>- `<0`: $s1$ viene prima di $s2$.<br><br>- `>0`: $s1$ viene dopo $s2$. |
 
 ### 2.2 Ricerca e Sottostringhe
 
