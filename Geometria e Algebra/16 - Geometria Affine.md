@@ -34,13 +34,13 @@ Dove:
 * $H \subseteq \mathbb{R}^n$ è un sottospazio vettoriale, detto **giacitura** o *spazio direttore*.
 
 > [!example] Esempio
-> [cite_start]Se $P \in A^n$, allora il singoletto $\{P\}$ è un sottospazio affine di dimensione 0, in quanto $\{P\} = P + \{0\}$[cite: 692].
+> Se $P \in A^n$, allora il singoletto $\{P\}$ è un sottospazio affine di dimensione 0, in quanto $\{P\} = P + \{0\}$.
 
 ### Connessione con i Sistemi Lineari
 Questa definizione chiude il cerchio con la teoria dei sistemi lineari trattata in [[Geometria e Algebra/05 - Metodo Matriciale per Sistemi Lineari, Teorema di Rouché-Capelli, Teorema di Cramer.md|Sistemi Lineari]]. L'insieme delle soluzioni di un sistema lineare risolubile $Ax=b$ è sempre un sottospazio affine. La soluzione generale si scrive come:
 $$\Sigma = z + \ker(A)$$
 dove:
-* $z$ è una **soluzione particolare** del sistema non omogeneo (il punto di applicazione $P$)[cite: 703].
+* $z$ è una **soluzione particolare** del sistema non omogeneo (il punto di applicazione $P$).
 * $\ker(A)$ è lo spazio delle soluzioni del sistema omogeneo associato $Ax=0$ (la giacitura $H$).
 
 ## 4. Dimensione e Classificazione
