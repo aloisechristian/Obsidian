@@ -117,7 +117,7 @@ buffer[strcspn(buffer, "\n")] = '\0';
 
 Quando si mescolano `scanf` (lettura formattata) e `fgets` (lettura di riga), il carattere `\n` lasciato dalla `scanf` viene letto erroneamente dalla `fgets` successiva come una riga vuota.
 
-**Soluzione Portabile:** Poiché `fflush(stdin)` non è standard ANSI C per gli stream di input (funziona solo su alcuni compilatori come MSVC, ma non su GCC/Linux), si deve usare un ciclo di consumazione:
+	**Soluzione Portabile:** Poiché `fflush(stdin)` non è standard ANSI C per gli stream di input (funziona solo su alcuni compilatori come MSVC, ma non su GCC/Linux), si deve usare un ciclo di consumazione:
 
 ```c
 void flush_input_buffer() {
